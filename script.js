@@ -78,4 +78,40 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Speaker Bio Modal Functionality
+    const speakerNames = document.querySelectorAll('.speaker-name');
+    const modal = document.getElementById('speakerModal');
+    const modalSpeakerName = document.getElementById('modalSpeakerName');
+    const modalSpeakerBio = document.getElementById('modalSpeakerBio');
+    const closeBtn = document.querySelector('.close');
+    
+    if (speakerNames.length > 0) {
+        speakerNames.forEach(speakerName => {
+            speakerName.addEventListener('click', function() {
+                const bio = this.getAttribute('data-bio');
+                const name = this.textContent;
+                
+                modalSpeakerName.textContent = name;
+                modalSpeakerBio.textContent = bio;
+                modal.style.display = 'block';
+            });
+        });
+    }
+    
+    // Close modal functionality
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    }
+    
+    // Close modal when clicking outside of it
+    if (modal) {
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });
