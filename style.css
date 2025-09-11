@@ -10,12 +10,15 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
+    min-width: 1400px;
+    overflow-x: auto;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
+    min-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Header Styles */
@@ -153,6 +156,25 @@ body {
     background: #004080 !important;
 }
 
+.nav-register-btn {
+    background: #ffffff !important;
+    color: #005A9C !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 90, 156, 0.3);
+    border: 2px solid #005A9C;
+}
+
+.nav-register-btn:hover {
+    background: #005A9C !important;
+    color: #ffffff !important;
+    border-color: #005A9C;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 90, 156, 0.4);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -173,16 +195,21 @@ body {
     color: white;
     padding: 60px 0 40px;
     margin-top: 70px;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .hero-content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
+    min-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     text-align: left;
+    overflow: visible;
 }
 
 .hero-text {
@@ -190,15 +217,28 @@ body {
     max-width: 750px;
     margin: 0;
     position: relative;
+    overflow: visible;
 }
 
-.hero-title-row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
+.hero-description {
+    margin-top: 2rem;
+}
+
+.hero-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e8f4f8;
+    margin-bottom: 0;
+}
+
+.hero-register {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+
+.hero-title {
     margin-bottom: 1rem;
-    position: relative;
 }
 
 .hero h1 {
@@ -210,14 +250,7 @@ body {
     flex: 1;
 }
 
-.hero-title-row .btn-primary {
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: 1.5rem;
-    z-index: 10;
-}
+
 
 .hero-subtitle {
     font-size: 0.95rem;
@@ -279,20 +312,21 @@ body {
 }
 
 .btn-primary {
-    background: #005A9C;
-    color: white;
+    background: #ffffff;
+    color: #005A9C;
     padding: 0.8rem 1.8rem;
-    border: none;
+    border: 2px solid #005A9C;
     border-radius: 6px;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
+    text-shadow: none;
 }
 
 .btn-primary::before {
@@ -307,9 +341,11 @@ body {
 }
 
 .btn-primary:hover {
-    background: #004080;
+    background: #005A9C;
+    color: #ffffff;
+    border-color: #005A9C;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,90,156,0.3);
+    box-shadow: 0 6px 16px rgba(0, 90, 156, 0.4);
 }
 
 .btn-primary:hover::before {
@@ -343,7 +379,7 @@ body {
 }
 
 .about .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -352,15 +388,16 @@ body {
 
 .about-content {
     display: flex;
-    gap: 4rem;
-    align-items: center;
+    gap: 2rem;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .about-text {
     flex: 1;
     text-align: left;
-    max-width: 700px;
+    max-width: 400px;
+    margin-right: 2rem;
 }
 
 .about-text h2 {
@@ -402,18 +439,108 @@ body {
 }
 
 .about-image {
-    flex: 1;
+    flex: 0 0 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-image img {
-    width: auto;
-    height: 450px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     object-fit: contain;
+}
+
+/* About Speakers Section */
+.about-speakers {
+    flex: 0 0 350px;
+    max-width: 350px;
+}
+
+.about-speakers-box {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+}
+
+.about-speakers-box h3 {
+    font-size: 1.8rem;
+    color: #005A9C;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about-speaker-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-speaker-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.about-speaker-card:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-speaker-image {
+    flex-shrink: 0;
+}
+
+.about-placeholder-image {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #005A9C;
+}
+
+.about-placeholder-image i {
+    font-size: 1.5rem;
+    color: #005A9C;
+}
+
+.about-speaker-info {
+    flex: 1;
+}
+
+.about-speaker-name {
+    font-size: 1.2rem;
+    color: #005A9C;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.about-speaker-name:hover {
+    color: #004080;
+}
+
+.about-speaker-title {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
 }
 
 /* Contact Section */
@@ -984,6 +1111,98 @@ body {
     font-weight: bold;
 }
 
+/* Featured Speakers Section */
+.featured-speakers {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.featured-speakers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.speaker-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.speaker-card-large {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 400px;
+    max-width: 100%;
+    border: 2px solid #e9ecef;
+}
+
+.speaker-card-large:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    border-color: #005A9C;
+}
+
+.speaker-card-large .speaker-image {
+    margin-bottom: 2rem;
+}
+
+.placeholder-image {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 3px solid #005A9C;
+}
+
+.placeholder-image i {
+    font-size: 4rem;
+    color: #005A9C;
+}
+
+.speaker-card-large .speaker-name {
+    font-size: 1.8rem;
+    color: #005A9C;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.speaker-card-large .speaker-name:hover {
+    color: #004080;
+}
+
+.speaker-card-large .speaker-title {
+    color: #005A9C;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.speaker-card-large .speaker-organization {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.speaker-card-large .speaker-bio {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
 /* Footer */
 .footer {
     background: #000000;
@@ -1185,13 +1404,7 @@ body {
         position: relative;
     }
     
-    .hero-title-row .btn-primary {
-        position: absolute;
-        right: 1.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-top: 1.5rem;
-    }
+    
     
     .hero h1 {
         font-size: 2rem;
@@ -1210,6 +1423,32 @@ body {
     .about-content {
         flex-direction: column;
         text-align: center;
+        gap: 2rem;
+    }
+    
+    .about-text {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .about-speakers {
+        max-width: 100%;
+        flex: none;
+        margin-bottom: 2rem;
+    }
+    
+    .about-image {
+        flex: none;
+        max-width: 100%;
+    }
+    
+    .about-speakers-box {
+        padding: 1.5rem;
+    }
+    
+    .about-speakers-box h3 {
+        font-size: 1.5rem;
     }
 
     .stats {
@@ -1230,6 +1469,23 @@ body {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+    
+    /* Featured Speakers responsive */
+    .speaker-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .speaker-card-large {
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem;
+    }
+    
+    .featured-speakers h2 {
+        font-size: 2rem;
     }
 
     .agenda-tabs {
@@ -1309,21 +1565,16 @@ body {
         padding: 0 1.5rem 0 4%;
         margin-top: 0;
     }
+    
+    .hero-description p {
+        font-size: 1rem;
+    }
 
-    .hero-title-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        position: relative;
+    .hero-register {
+        text-align: center;
     }
     
-    .hero-title-row .btn-primary {
-        position: absolute;
-        right: 1.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-top: 1.5rem;
-    }
+    
     
     .hero h1 {
         font-size: 1.6rem;
@@ -1372,6 +1623,29 @@ body {
         width: 95%;
     }
     
+    /* Featured Speakers mobile */
+    .speaker-card-large {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .placeholder-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .placeholder-image i {
+        font-size: 3rem;
+    }
+    
+    .speaker-card-large .speaker-name {
+        font-size: 1.5rem;
+    }
+    
+    .featured-speakers h2 {
+        font-size: 1.8rem;
+    }
+    
     /* Speaker Bio Modal responsive */
     #speakerModal .modal-content {
         max-width: 95%;
@@ -1404,12 +1678,37 @@ html {
         padding: 0 1rem;
     }
     
+    .hero-description p {
+        font-size: 0.95rem;
+    }
+    
     .hero-text {
         max-width: 650px;
     }
 
     .about-content {
         gap: 2rem;
+    }
+    
+    .about-speakers-box {
+        padding: 1rem;
+    }
+    
+    .about-speakers-box h3 {
+        font-size: 1.3rem;
+    }
+    
+    .about-placeholder-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .about-placeholder-image i {
+        font-size: 1.2rem;
+    }
+    
+    .about-speaker-name {
+        font-size: 1.1rem;
     }
 
     .venue-content {
@@ -1444,6 +1743,21 @@ html {
     .about-content {
         flex-direction: column;
         gap: 2rem;
+    }
+    
+    .about-text {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+    .about-speakers {
+        flex: none;
+        max-width: 100%;
+    }
+    
+    .about-image {
+        flex: none;
+        max-width: 100%;
     }
     .about-image img {
         width: auto;
