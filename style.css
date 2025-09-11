@@ -171,7 +171,7 @@ body {
 .hero {
     background: #00365e;
     color: white;
-    padding: 140px 0 120px;
+    padding: 60px 0 40px;
     margin-top: 70px;
 }
 
@@ -189,19 +189,39 @@ body {
     width: 100%;
     max-width: 750px;
     margin: 0;
+    position: relative;
+}
+
+.hero-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    flex: 1;
+}
+
+.hero-title-row .btn-primary {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 1.5rem;
+    z-index: 10;
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
     opacity: 0.9;
     max-width: 600px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
@@ -209,8 +229,8 @@ body {
 
 .hero-details {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
@@ -255,7 +275,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .btn-primary {
@@ -966,7 +986,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #1f2937;
+    background: #000000;
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -1158,12 +1178,28 @@ body {
         display: flex;
     }
 
+    .hero-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+    }
+    
+    .hero-title-row .btn-primary {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 1.5rem;
+    }
+    
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .hero-details {
@@ -1266,7 +1302,7 @@ body {
     }
 
     .hero {
-        padding: 100px 0 60px;
+        padding: 50px 0 30px;
     }
     
     .hero-content {
@@ -1274,12 +1310,28 @@ body {
         margin-top: 0;
     }
 
+    .hero-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        position: relative;
+    }
+    
+    .hero-title-row .btn-primary {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 1.5rem;
+    }
+    
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 0;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .btn-primary,
