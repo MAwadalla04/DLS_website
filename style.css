@@ -598,7 +598,7 @@ body {
 
 /* Keynote Speaker Section */
 .keynote-section {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
@@ -616,10 +616,16 @@ body {
 }
 
 .keynote-card {
-    max-width: 500px;
+    max-width: 350px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border: 2px solid #005A9C;
     box-shadow: 0 8px 30px rgba(0,90,156,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .keynote-card:hover {
@@ -627,20 +633,35 @@ body {
     box-shadow: 0 12px 40px rgba(0,90,156,0.25);
 }
 
-.keynote-card img {
-    width: 200px;
-    height: 200px;
+.keynote-card .speaker-info {
+    width: 100%;
 }
 
 .keynote-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #005A9C;
+    margin-bottom: 0.3rem;
+}
+
+.keynote-card .speaker-title {
+    color: #005A9C;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.keynote-card .speaker-organization {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 .keynote-card .speaker-bio {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #555;
 }
 
 /* Speaker Tabs */
@@ -1093,8 +1114,11 @@ body {
 
 /* Speaker Bio Modal */
 #speakerModal .modal-content {
-    max-width: 600px;
+    max-width: 900px;
+    max-height: 70vh;
     padding: 2.5rem;
+    overflow-y: auto;
+    margin: 3% auto;
 }
 
 #speakerModal h3 {
@@ -1109,6 +1133,7 @@ body {
     line-height: 1.7;
     color: #333;
     text-align: left;
+    margin-bottom: 0;
 }
 
 /* Responsive Design */
@@ -1215,9 +1240,19 @@ body {
     }
     
     /* Keynote responsive */
-    .keynote-card img {
-        width: 150px;
-        height: 150px;
+    .keynote-card {
+        max-width: 90%;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 1.2rem;
+    }
+    
+    .keynote-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .keynote-card .speaker-bio {
+        font-size: 0.8rem;
     }
     
     .keynote-section h3 {
@@ -1284,6 +1319,24 @@ body {
         padding: 1.5rem;
         width: 95%;
     }
+    
+    /* Speaker Bio Modal responsive */
+    #speakerModal .modal-content {
+        max-width: 95%;
+        max-height: 75vh;
+        padding: 1.5rem;
+        margin: 2% auto;
+    }
+    
+    #speakerModal h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #speakerModal p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }
 
 /* Smooth Scrolling */
@@ -1318,6 +1371,14 @@ html {
     .pricing-tiers {
         gap: 1.5rem;
     }
+    
+    /* Speaker Bio Modal for tablets */
+    #speakerModal .modal-content {
+        max-width: 95%;
+        max-height: 70vh;
+        padding: 2rem;
+        margin: 2% auto;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1348,6 +1409,14 @@ html {
     .speaker-card img {
         width: 140px;
         height: 140px;
+    }
+    
+    /* Keynote card for medium screens */
+    .keynote-card {
+        max-width: 85%;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 1.3rem;
     }
 }
 
