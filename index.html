@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title> Disaster Law Symposium </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -68,26 +68,24 @@
                     <div class="about-speakers-box">
                         <h3>Featured Speakers</h3>
                         <div class="about-speaker-cards">
-                            <div class="about-speaker-card">
+                            <div class="about-speaker-card" data-speaker="keynote">
                                 <div class="about-speaker-image">
                                     <div class="about-placeholder-image">
                                         <i class="fas fa-user"></i>
                                     </div>
                                 </div>
                                 <div class="about-speaker-info">
-                                    <h4 class="about-speaker-name" data-bio="Keynote speaker information will be announced soon. Please check back for updates on our distinguished keynote presenter.">TBD</h4>
+                                    <h4 class="about-speaker-name">TBD</h4>
                                     <p class="about-speaker-title">Keynote Speaker</p>
                                 </div>
                             </div>
                             
-                            <div class="about-speaker-card">
+                            <div class="about-speaker-card" data-speaker="counsel">
                                 <div class="about-speaker-image">
-                                    <div class="about-placeholder-image">
-                                        <i class="fas fa-user"></i>
-                                    </div>
+                                    <img src="SRC/Headshots/SO HS.png" alt="Sonja Orgias" class="about-speaker-img">
                                 </div>
                                 <div class="about-speaker-info">
-                                    <h4 class="about-speaker-name" data-bio="Chief Counsel information will be announced soon. Please check back for updates on our distinguished legal expert.">TBD</h4>
+                                    <h4 class="about-speaker-name">Sonja Orgias, Esq.</h4>
                                     <p class="about-speaker-title">Chief Counsel</p>
                                 </div>
                             </div>
@@ -136,6 +134,28 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Speaker Bio Modal -->
+    <div id="speakerModal" class="speaker-modal">
+        <div class="speaker-modal-content">
+            <div class="speaker-modal-header">
+                <span class="speaker-modal-close">&times;</span>
+                <div class="speaker-modal-photo">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="speaker-modal-info">
+                    <h2 class="speaker-modal-name" id="modalSpeakerName">Speaker Name</h2>
+                    <p class="speaker-modal-title" id="modalSpeakerTitle">Speaker Title</p>
+                    <p class="speaker-modal-organization" id="modalSpeakerOrganization">Organization</p>
+                </div>
+            </div>
+            <div class="speaker-modal-body">
+                <div class="speaker-modal-bio" id="modalSpeakerBio">
+                    <p>Speaker bio will be displayed here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
