@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Speaker data
     const speakerData = {
         keynote: {
-            name: "TBD",
+            name: "MaryAnn Tierney",
             title: "Keynote Speaker",
-            organization: "To Be Announced",
-            bio: "Our distinguished keynote speaker will be announced soon. This prominent legal expert will provide insights into the evolving landscape of disaster law and emergency management. Please check back for updates on our keynote presenter who will set the tone for this important symposium.",
-            image: null
+            organization: "Former Acting Deputy Secretary, Department of Homeland Security",
+            bio: "<p>MaryAnn spent 15 years with the Federal Emergency Management Agency as the Regional Administrator for FEMA Region 3. In January 2025 she served as the Acting Deputy Secretary of the Department of Homeland Security. MaryAnn served in a variety of roles across FEMA including as the Senior Official Performing the Duties of Deputy Administrator (2025), Acting Deputy Administrator (2021), Acting Regional Administrator for Region 2 (2013), and Associate Administrator for Mission Support (2017).</p><p>In addition to her permanent position, she is a qualified Federal Coordinating Officer (Type 1) and led one of FEMA's five National Incident Management Assistance Teams. She deployed to several Presidentially declared disasters to support survivors and communities and has served in senior coordinating roles for the Department of Homeland Security and National Security Council. MaryAnn has also worked in emergency management in New York City and Philadelphia.</p><p>She has a BA from American University, a MPA from New York University, and has completed the three primary professional military education courses for General and Flag officers. MaryAnn received the DHS Secretary's Outstanding Service Medal in 2021, the Presidential Rank Award, Distinguished Rank in 2022, and the DHS Secretary's Meritorious Service Silver Medal in 2023.</p><p>MaryAnn lives in South Philly with her husband, son, and dog; is an avid runner; and aspires to one day have a cooking show like Ina Garten.</p>",
+            image: "SRC/Headshots/MAT.jpg"
         },
         counsel: {
             name: "Sonja Orgias, Esq.", 
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Speaker Modal Functionality
     const speakerCards = document.querySelectorAll('.about-speaker-card');
+    const speakerBioButtons = document.querySelectorAll('.speaker-bio-btn');
     const modal = document.getElementById('speakerModal');
     const modalSpeakerName = document.getElementById('modalSpeakerName');
     const modalSpeakerTitle = document.getElementById('modalSpeakerTitle');
@@ -80,40 +81,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalSpeakerPhoto = document.querySelector('.speaker-modal-photo');
     const closeBtn = document.querySelector('.speaker-modal-close');
     
+    // Function to open speaker modal
+    function openSpeakerModal(speakerType) {
+        const speaker = speakerData[speakerType];
+        
+        if (speaker) {
+            modalSpeakerName.textContent = speaker.name;
+            modalSpeakerTitle.textContent = speaker.title;
+            modalSpeakerOrganization.textContent = speaker.organization;
+            modalSpeakerBio.innerHTML = speaker.bio;
+            
+            // Set photo
+            if (speaker.image) {
+                // Check if image is a PDF file
+                if (speaker.image.toLowerCase().endsWith('.pdf')) {
+                    // For PDF files, we'll use a placeholder with the person's initials
+                    const nameParts = speaker.name.split(' ');
+                    let initials = '';
+                    if (nameParts.length >= 2) {
+                        initials = nameParts[0].charAt(0) + nameParts[1].charAt(0);
+                    } else {
+                        initials = nameParts[0].charAt(0);
+                    }
+                    modalSpeakerPhoto.innerHTML = `<div class="speaker-initials">${initials}</div>`;
+                } else {
+                    modalSpeakerPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}">`;
+                }
+            } else {
+                modalSpeakerPhoto.innerHTML = '<i class="fas fa-user"></i>';
+            }
+            
+            modal.style.display = 'block';
+        }
+    }
+    
+    // Add event listeners to speaker cards
     if (speakerCards.length > 0) {
         speakerCards.forEach(card => {
             card.addEventListener('click', function() {
                 const speakerType = this.getAttribute('data-speaker');
-                const speaker = speakerData[speakerType];
-                
-                if (speaker) {
-                    modalSpeakerName.textContent = speaker.name;
-                    modalSpeakerTitle.textContent = speaker.title;
-                    modalSpeakerOrganization.textContent = speaker.organization;
-                    modalSpeakerBio.innerHTML = speaker.bio;
-                    
-                    // Set photo
-                    if (speaker.image) {
-                        // Check if image is a PDF file
-                        if (speaker.image.toLowerCase().endsWith('.pdf')) {
-                            // For PDF files, we'll use a placeholder with the person's initials
-                            const nameParts = speaker.name.split(' ');
-                            let initials = '';
-                            if (nameParts.length >= 2) {
-                                initials = nameParts[0].charAt(0) + nameParts[1].charAt(0);
-                            } else {
-                                initials = nameParts[0].charAt(0);
-                            }
-                            modalSpeakerPhoto.innerHTML = `<div class="speaker-initials">${initials}</div>`;
-                        } else {
-                            modalSpeakerPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}">`;
-                        }
-                    } else {
-                        modalSpeakerPhoto.innerHTML = '<i class="fas fa-user"></i>';
-                    }
-                    
-                    modal.style.display = 'block';
-                }
+                openSpeakerModal(speakerType);
+            });
+        });
+    }
+    
+    // Add event listeners to speaker bio buttons
+    if (speakerBioButtons.length > 0) {
+        speakerBioButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const speakerType = this.getAttribute('data-speaker');
+                openSpeakerModal(speakerType);
             });
         });
     }
