@@ -1151,6 +1151,7 @@ html {
     border-radius: 50%;
     border: 5px solid #005A9C;
     object-fit: cover;
+    object-position: center top;
 }
 
 .featured-speaker-info {
