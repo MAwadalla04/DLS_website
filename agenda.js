@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'AI & Disaster Law Expert',
                     organization: 'Organization TBD',
                     bio: 'Expert in artificial intelligence applications in disaster law and emergency management.',
-                    image: 'SRC/Headshots/Robert Wilson headshot.jpg'
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Robert_Wilson_HS.JPG?raw=true'
                 },
                 {
                     name: 'Sarah Carrier',
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'FOIL & Government Transparency Expert',
                     organization: 'Organization TBD',
                     bio: 'Expert in Freedom of Information Law and government transparency in emergency situations.',
-                    image: 'SRC/Headshots/Rob DeVoogd headshot.jpg'
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Rob%20DeVoogd%20Headshot.jpg?raw=true'
                 }
             ]
         },
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Invisible Disabilities & Disaster Law Expert',
                     organization: 'Organization TBD',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
-                    image: 'SRC/Headshots/Dennis Debbaudt headshot.jpg'
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Debbaudt%20Headshot.jpg?raw=true'
                 },
                 {
                     name: 'Howard Rosenblum',
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Invisible Disabilities & Disaster Law Expert',
                     organization: 'Organization TBD',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
-                    image: 'SRC/Headshots/Saiena Shafiezadeh headshot.jpg'
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Shafiezadeh%20Headshot.jpg?raw=true'
                 }
             ]
         }
@@ -251,8 +251,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     panel.speakers.forEach(speaker => {
                         const speakerCard = document.createElement('div');
                         speakerCard.className = 'panel-speaker-card';
+                        
+                        // Add specific class for Robert DeVoogd's image
+                        const imageClass = speaker.name === 'Rob DeVoogd' ? 'robert-devoogd-img' : '';
+                        
                         speakerCard.innerHTML = `
-                            <img src="${speaker.image}" alt="${speaker.name} headshot">
+                            <img src="${speaker.image}" alt="${speaker.name} headshot" class="${imageClass}">
                             <h4>${speaker.name}</h4>
                             <p class="speaker-title">${speaker.title}</p>
                             <p class="speaker-organization">${speaker.organization}</p>
@@ -276,6 +280,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSpeakerBio(speaker) {
         speakerBioImage.src = speaker.image;
         speakerBioImage.alt = speaker.name + ' headshot';
+        
+        // Add specific class for Robert DeVoogd's image
+        if (speaker.name === 'Rob DeVoogd') {
+            speakerBioImage.className = 'robert-devoogd-bio-img';
+        } else {
+            speakerBioImage.className = '';
+        }
+        
         speakerBioName.textContent = speaker.name;
         speakerBioTitle.textContent = speaker.title;
         speakerBioOrganization.textContent = speaker.organization;
