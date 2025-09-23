@@ -21,7 +21,7 @@
                     <li><a href="agenda.html">Agenda</a></li>
                     <li><a href="venue.html">Venue</a></li>
                     <li><a href="speakers.html">Speakers</a></li>
-                    <li><a href="register.html" class="nav-register-btn">Register</a></li>
+                    <li><a href="https://events.zoom.us/ev/AnoihI7GwMsthoCO0oGrKTCq-RIecr7pkUMvvzf9Mxi8SDZ7F-Vp~AjL2XYa1db4NPIbTQPrb0EYdRGOUrRkrAQGUcQUMdYDXeTuygGtN4w03qQ" target="_blank" class="nav-register-btn">Register</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -39,35 +39,57 @@
             <h3 style="text-align:center; color:#005A9C; margin-bottom:2rem;">Wednesday, November 5th, 2025</h3>
             <div class="agenda-content">
                 <div class="schedule-item">
-                    <div class="time">9:00 AM</div>
+                    <div class="time">TBD</div>
                     <div class="session">
                         <h4>Opening Keynote</h4>
                         <p>Welcome address and industry overview</p>
                         <span class="speaker">TBD</span>
+                        <span class="location">Location: TBD</span>
                     </div>
                 </div>
                 <div class="schedule-item">
-                    <div class="time">10:30 AM</div>
+                    <div class="time">TBD</div>
                     <div class="session">
-                        <h4>Panel Discussion: Future Trends</h4>
-                        <p>Industry experts discuss emerging trends and challenges</p>
-                        <span class="speaker">TBD</span>
+                        <h4>Panel: AI in Disaster Law</h4>
+                        <p>Exploring the intersection of artificial intelligence and disaster law, including privacy considerations, automated decision-making, and AI applications in emergency management</p>
+                        <button class="view-panel-btn" data-panel="ai-panel">View Panel</button>
+                        <span class="location">Location: TBD</span>
                     </div>
                 </div>
                 <div class="schedule-item">
-                    <div class="time">2:00 PM</div>
+                    <div class="time">TBD</div>
                     <div class="session">
-                        <h4>Workshop: Best Practices</h4>
-                        <p>Hands-on workshop covering industry best practices</p>
-                        <span class="speaker">TBD</span>
+                        <h4>Panel: Ethics in Disaster Law</h4>
+                        <p>Examining ethical frameworks and professional responsibility in disaster law, including attorney ethics, compliance issues, and ethical decision-making in emergency situations</p>
+                        <button class="view-panel-btn" data-panel="ethics-panel">View Panel</button>
+                        <span class="location">Location: TBD</span>
                     </div>
                 </div>
                 <div class="schedule-item">
-                    <div class="time">4:00 PM</div>
+                    <div class="time">TBD</div>
+                    <div class="session">
+                        <h4>Panel: FOIL and Government Transparency</h4>
+                        <p>Freedom of Information Law applications in disaster situations, government transparency, and public access to emergency management information</p>
+                        <button class="view-panel-btn" data-panel="foil-panel">View Panel</button>
+                        <span class="location">Location: TBD</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time">TBD</div>
+                    <div class="session">
+                        <h4>Panel: Invisible Disabilities and Disaster Law</h4>
+                        <p>Addressing the needs of individuals with invisible disabilities in emergency planning, disaster response, and legal protections during crises</p>
+                        <button class="view-panel-btn" data-panel="disabilities-panel">View Panel</button>
+                        <span class="location">Location: TBD</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="time">TBD</div>
                     <div class="session">
                         <h4>Closing Remarks</h4>
                         <p>Conference wrap-up and next steps</p>
                         <span class="speaker">TBD</span>
+                        <span class="location">Location: TBD</span>
                     </div>
                 </div>
             </div>
@@ -91,7 +113,7 @@
                         <li><a href="agenda.html">Agenda</a></li>
                         <li><a href="venue.html">Venue</a></li>
                         <li><a href="speakers.html">Speakers</a></li>
-                        <li><a href="register.html">Register</a></li>
+                        <li><a href="https://events.zoom.us/ev/AnoihI7GwMsthoCO0oGrKTCq-RIecr7pkUMvvzf9Mxi8SDZ7F-Vp~AjL2XYa1db4NPIbTQPrb0EYdRGOUrRkrAQGUcQUMdYDXeTuygGtN4w03qQ" target="_blank">Register</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -108,6 +130,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Panel Modal -->
+    <div id="panelModal" class="modal">
+        <div class="modal-content panel-modal-content">
+            <span class="close">&times;</span>
+            <h3 id="panelModalTitle"></h3>
+            <div id="panelModalSpeakers" class="panel-speakers-grid">
+                <!-- Speaker cards will be populated here -->
+            </div>
+        </div>
+    </div>
 
     <script src="agenda.js"></script>
 </body>

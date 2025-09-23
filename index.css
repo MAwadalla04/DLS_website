@@ -1075,9 +1075,12 @@ html {
 
 .featured-speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 4rem;
+    margin-bottom: 4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .featured-speaker-card {
@@ -1119,8 +1122,8 @@ html {
 
 .featured-speaker-content {
     display: flex;
-    padding: 2rem;
-    gap: 2rem;
+    padding: 3.5rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -1146,10 +1149,10 @@ html {
 }
 
 .speaker-img {
-    width: 140px;
-    height: 140px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    border: 5px solid #005A9C;
+    border: 6px solid #005A9C;
     object-fit: cover;
     object-position: center top;
 }
@@ -1159,40 +1162,41 @@ html {
 }
 
 .featured-speaker-name {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #005A9C;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
 .featured-speaker-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
 .featured-speaker-organization {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-style: italic;
 }
 
 .featured-speaker-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
 }
+
 
 .speaker-bio-btn {
     background: #005A9C;
     color: white;
     border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-size: 0.95rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1228,6 +1232,7 @@ html {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,90,156,0.3);
 }
+
 
 /* Responsive Design for Featured Speakers */
 @media (max-width: 1100px) {
