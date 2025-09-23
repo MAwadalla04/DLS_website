@@ -21,7 +21,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="agenda.html">Agenda</a></li>
                     <li><a href="venue.html">Venue</a></li>
-                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -68,13 +68,12 @@
                 <div class="featured-speaker-card keynote-card">
                     <div class="featured-speaker-content">
                         <div class="featured-speaker-image">
-                            <img src="SRC/Headshots/MAT.jpg" alt="MaryAnn Tierney" class="speaker-img">
+                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/MAT.jpg?raw=true" alt="MaryAnn Tierney" class="speaker-img">
                         </div>
                         <div class="featured-speaker-info">
                             <h3 class="featured-speaker-name">MaryAnn Tierney</h3>
                             <p class="featured-speaker-title">Keynote Speaker</p>
                             <p class="featured-speaker-organization">Former Acting Deputy Secretary, Department of Homeland Security</p>
-                            <p class="featured-speaker-description">Former FEMA Regional Administrator with 15 years of federal emergency management experience and leadership in disaster response.</p>
                             <button class="speaker-bio-btn" data-speaker="keynote">View Bio</button>
                         </div>
                     </div>
@@ -84,22 +83,18 @@
                 <div class="featured-speaker-card counsel-card">
                     <div class="featured-speaker-content">
                         <div class="featured-speaker-image">
-                            <img src="SRC/Headshots/SO HS.png" alt="Sonja Orgias" class="speaker-img">
+                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/SO%20HS.png?raw=true" alt="Sonja Orgias" class="speaker-img">
                         </div>
                         <div class="featured-speaker-info">
                             <h3 class="featured-speaker-name">Sonja Orgias, Esq.</h3>
                             <p class="featured-speaker-title">Chief Counsel</p>
                             <p class="featured-speaker-organization">New York City Emergency Management</p>
-                            <p class="featured-speaker-description">Leading legal operations and providing guidance on emergency management and disaster response. Will deliver welcoming remarks at the symposium.</p>
                             <button class="speaker-bio-btn" data-speaker="counsel">View Bio</button>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="view-all-speakers">
-                <a href="speakers.html" class="btn-secondary">View All Speakers</a>
-            </div>
         </div>
     </section>
 
@@ -134,7 +129,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="agenda.html">Agenda</a></li>
                         <li><a href="venue.html">Venue</a></li>
-                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
                         <li><a href="https://events.zoom.us/ev/AnoihI7GwMsthoCO0oGrKTCq-RIecr7pkUMvvzf9Mxi8SDZ7F-Vp~AjL2XYa1db4NPIbTQPrb0EYdRGOUrRkrAQGUcQUMdYDXeTuygGtN4w03qQ" target="_blank">Register</a></li>
                     </ul>
                 </div>
@@ -154,22 +149,18 @@
     </footer>
 
     <!-- Speaker Bio Modal -->
-    <div id="speakerModal" class="speaker-modal">
-        <div class="speaker-modal-content">
-            <div class="speaker-modal-header">
-                <span class="speaker-modal-close">&times;</span>
+    <div id="speakerModal" class="modal">
+        <div class="modal-content speaker-modal-content">
+            <span class="close speaker-modal-close">&times;</span>
+            <div class="speaker-modal-info">
                 <div class="speaker-modal-photo">
-                    <i class="fas fa-user"></i>
+                    <!-- Speaker photo will be inserted here -->
                 </div>
-                <div class="speaker-modal-info">
-                    <h2 class="speaker-modal-name" id="modalSpeakerName">Speaker Name</h2>
-                    <p class="speaker-modal-title" id="modalSpeakerTitle">Speaker Title</p>
-                    <p class="speaker-modal-organization" id="modalSpeakerOrganization">Organization</p>
-                </div>
-            </div>
-            <div class="speaker-modal-body">
-                <div class="speaker-modal-bio" id="modalSpeakerBio">
-                    <p>Speaker bio will be displayed here...</p>
+                <div class="speaker-modal-details">
+                    <h3 id="modalSpeakerName"></h3>
+                    <p id="modalSpeakerTitle"></p>
+                    <p id="modalSpeakerOrganization"></p>
+                    <div id="modalSpeakerBio"></div>
                 </div>
             </div>
         </div>

@@ -309,6 +309,203 @@ body {
     display: block;
 }
 
+/* Parallel Sessions */
+.parallel-session {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #005A9C;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.parallel-panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.panel-session {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.panel-session:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-color: #005A9C;
+}
+
+.panel-session h4 {
+    color: #005A9C;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.panel-session p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.panel-session .view-panel-btn {
+    margin-bottom: 0.8rem;
+}
+
+.panel-session .location {
+    color: #005A9C;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Clickable Speaker Names */
+.clickable-speaker {
+    cursor: pointer;
+    color: #005A9C;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.clickable-speaker:hover {
+    color: #004080;
+    text-decoration: none;
+}
+
+/* Speaker Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.speaker-modal-content {
+    padding: 2rem;
+}
+
+.speaker-modal-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.speaker-modal-photo {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #005A9C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.speaker-modal-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.speaker-modal-photo .speaker-initials {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #005A9C;
+}
+
+.speaker-modal-details {
+    flex: 1;
+}
+
+.speaker-modal-details h3 {
+    color: #005A9C;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.speaker-modal-details p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.speaker-modal-details p:first-of-type {
+    font-weight: bold;
+    color: #333;
+}
+
+.speaker-modal-details div {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.speaker-modal-details div p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+    color: #005A9C;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Footer */
 .footer {
     background: #000000;
@@ -406,6 +603,32 @@ body {
 
     .time {
         min-width: auto;
+    }
+    
+    .parallel-panels {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .panel-session {
+        padding: 1.2rem;
+    }
+    
+    .speaker-modal-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .speaker-modal-photo {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    .speaker-modal-details h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -510,11 +733,69 @@ body {
     font-size: 0.85rem;
 }
 
-.panel-speaker-card .speaker-bio {
-    color: #555;
-    font-size: 0.8rem;
-    line-height: 1.4;
-    text-align: left;
+.panel-speaker-card {
+    cursor: pointer;
+}
+
+.panel-speaker-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #005A9C;
+}
+
+/* Individual Speaker Bio Modal */
+.speaker-bio-modal-content {
+    max-width: 800px;
+    max-height: 80vh;
+    padding: 2rem;
+}
+
+.speaker-bio-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.speaker-bio-image {
+    flex-shrink: 0;
+}
+
+.speaker-bio-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #005A9C;
+}
+
+.speaker-bio-details {
+    flex: 1;
+}
+
+.speaker-bio-details h3 {
+    color: #005A9C;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.speaker-bio-details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.speaker-bio-details p:first-of-type {
+    color: #005A9C;
+    font-weight: 600;
+}
+
+.speaker-bio-details p:nth-of-type(2) {
+    color: #666;
+    font-style: italic;
+}
+
+.speaker-bio-details p:last-of-type {
+    color: #333;
+    font-size: 1rem;
 }
 
 .close {
@@ -572,6 +853,21 @@ body {
     .panel-modal-content h3 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
+    }
+    
+    .speaker-bio-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .speaker-bio-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .speaker-bio-details h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
