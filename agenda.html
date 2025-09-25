@@ -43,7 +43,7 @@
                     <div class="session">
                         <h4>Breakfast and Registration</h4>
                         <p>Welcome coffee and registration check-in</p>
-                        <span class="location">Location: Brooklyn Law School</span>
+                        <span class="location">Location: 205 State St</span>
                     </div>
                 </div>
                 
@@ -53,7 +53,7 @@
                         <h4>Welcome and Opening Remarks</h4>
                         <p>Opening address and symposium overview</p>
                         <span class="speaker clickable-speaker" data-speaker="counsel">Sonja Orgias, Esq. - Chief Counsel, NYCEM</span>
-                        <span class="location">Location: Brooklyn Law School</span>
+                        <span class="location">Location: 205 State St</span>
                     </div>
                 </div>
                 
@@ -61,13 +61,13 @@
                     <div class="time">10:00 - 11:30 AM</div>
                     <div class="parallel-panels">
                         <div class="panel-session">
-                            <h4>Class 1: Invisible Disabilities and Disaster Law</h4>
+                            <h4 class="clickable-course" data-course="disabilities-course">Class 1: Invisible Disabilities and Disaster Law</h4>
                             <p>Addressing the needs of individuals with invisible disabilities in emergency planning, disaster response, and legal protections during crises</p>
                             <button class="view-panel-btn" data-panel="disabilities-panel">View Panel</button>
                             <span class="location">Location: 205 State Street</span>
                         </div>
                         <div class="panel-session">
-                            <h4>Class 1: FOIL and Government Transparency</h4>
+                            <h4 class="clickable-course" data-course="foil-course">Class 1: FOIL and Government Transparency</h4>
                             <p>Freedom of Information Law applications in disaster situations, government transparency, and public access to emergency management information</p>
                             <button class="view-panel-btn" data-panel="foil-panel">View Panel</button>
                             <span class="location">Location: 250 Joralemon Street</span>
@@ -90,7 +90,7 @@
                     <div class="session">
                         <h4>Lunch</h4>
                         <p>Networking lunch and refreshments</p>
-                        <span class="location">Location: Brooklyn Law School</span>
+                        <span class="location">Location: 205 State St</span>
                     </div>
                 </div>
                 
@@ -98,13 +98,13 @@
                     <div class="time">2:00 - 3:30 PM</div>
                     <div class="parallel-panels">
                         <div class="panel-session">
-                            <h4>Class 2: Ethics in Disaster Law</h4>
+                            <h4 class="clickable-course" data-course="ethics-course">Class 2: Ethics in Disaster Law</h4>
                             <p>Examining ethical frameworks and professional responsibility in disaster law, including attorney ethics, compliance issues, and ethical decision-making in emergency situations</p>
                             <button class="view-panel-btn" data-panel="ethics-panel">View Panel</button>
                             <span class="location">Location: 250 Joralemon Street</span>
                         </div>
                         <div class="panel-session">
-                            <h4>Class 2: AI in Disaster Law</h4>
+                            <h4 class="clickable-course" data-course="ai-course">Class 2: AI in Disaster Law</h4>
                             <p>Exploring the intersection of artificial intelligence and disaster law, including privacy considerations, automated decision-making, and AI applications in emergency management</p>
                             <button class="view-panel-btn" data-panel="ai-panel">View Panel</button>
                             <span class="location">Location: 205 State Street</span>
@@ -204,6 +204,15 @@
                     <div id="modalSpeakerBio"></div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Course Information Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content course-modal-content">
+            <span class="close">&times;</span>
+            <h3 id="courseModalTitle"></h3>
+            <div id="courseModalContent"></div>
         </div>
     </div>
 

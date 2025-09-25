@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const panelModalSpeakers = document.getElementById('panelModalSpeakers');
     const closeBtn = document.querySelector('.close');
     
+    // Course Information Modal
+    const courseModal = document.getElementById('courseModal');
+    const courseModalTitle = document.getElementById('courseModalTitle');
+    const courseModalContent = document.getElementById('courseModalContent');
+    
     // Individual Speaker Bio Modal
     const speakerBioModal = document.getElementById('speakerBioModal');
     const speakerBioImage = document.getElementById('speakerBioImage');
@@ -102,9 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Jiahao Chen',
-                    title: 'AI & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in artificial intelligence applications in disaster law and emergency management.',
+                    title: 'Director of AI/ML',
+                    organization: 'New York City Office of Technology and Innovation',
+                    bio: 'Jiahao Chen, PhD, is the Director of AI/ML at New York City\'s Office of Technology and Innovation. He oversees the implementation of NYC\'s AI Action Plan, the city\'s roadmap for responsible AI innovation. His work includes publishing guidance on the use of AI by city agencies, writing technical reference materials on classifying AI systems and AI risks, creating training materials for city staff on AI basics, developing the city\'s AI risk assessment process, and conducting public listening sessions on the city\'s use of AI. Jiahao holds a PhD in chemical physics from the University of Illinois at Urbana-Champaign. He was formerly research faculty at MIT working on scientific big data, a Senior Manager of Data Science, an Executive Director at JPMorgan AI Research, and the CTO and co-founder of Parity Technologies, a startup focused on algorithmic auditing solutions. Jiahao continues to be active in academic AI research, including serving as Ethics Chair for the Conference on Neural Information Processing Systems (NeurIPS), the world\'s largest academic AI conference. Jiahao was recently invited to speak at the American Bar Association\'s Annual Section of Labor & Employment Law Conference for his work on algorithmic auditing.',
                     image: 'SRC/Headshots/Jiahao Chen headshot.jpg'
                 },
                 {
@@ -222,9 +227,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Kristine Hoffman',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    title: 'Deputy Counsel',
+                    organization: 'NYS Division of Homeland Security and Emergency Services',
+                    bio: 'Kristine Hoffman is a Deputy Counsel for the NYS Division of Homeland Security and Emergency Services with 23 years of experience as an emergency management attorney. She has extensive expertise in law and policy across preparedness, response, recovery, and hazard mitigation portfolios. During her career as state legal counsel, she has advised and provided guidance to the Executive Chamber, state agencies, municipalities, and emergency management partners. During her tenure at DHSES she has authored portions of Executive Law Article 2-B, including the Intrastate Mutual Aid Program legislation, has trained county executives statewide, and co-authored more 200 State Disaster Emergency Executive Orders during major disasters. She has assisted in securing more than 30 Presidential major disaster declarations, developed FEMA policy interpretations benefiting New York, and assisted in the advancement of multimillion-dollar resilience projects. Prior to joining DHSES, Ms. Hoffman worked as attorney for the NYS Department of Health\'s Office of Health Emergency Preparedness, where she helped craft isolation and quarantine protocols and first-in-the-nation Alternate Care Site guidelines. She is a graduate of Siena College and Albany Law School.',
                     image: 'SRC/Headshots/Kristine Hoffman headshot.jpg'
                 },
                 {
@@ -235,6 +240,98 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Shafiezadeh%20Headshot.jpg?raw=true'
                 }
             ]
+        }
+    };
+    
+    // Course information data
+    const courseData = {
+        'ethics-course': {
+            title: 'Ethics in Disaster Law - Course Information',
+            content: `
+                <div class="cle-overview">
+                    <h4>CLE Overview:</h4>
+                    <p>This CLE explores the volatile landscape of ethics attorneys must navigate in their legal practice during and after emergencies or disasters — particularly in a world where emergency support systems (like FEMA) are underfunded or dismantled. Participants will examine their ethical obligations to clients, communities, and the court system while facing conflicting demands, unreliable systems, vulnerable populations, and legal uncertainties created by federal financial withdrawal.</p>
+                </div>
+                <h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Understand ethical obligations in disaster and emergency situations</li>
+                    <li>Navigate conflicts between client needs and community resources</li>
+                    <li>Address ethical challenges when support systems are unreliable</li>
+                    <li>Examine professional responsibility in vulnerable population contexts</li>
+                    <li>Develop strategies for ethical decision-making under uncertainty</li>
+                </ul>
+                <h4>Course Details:</h4>
+                <p><strong>Duration:</strong> 1.5 hours</p>
+                <p><strong>CLE Credits:</strong> 1.5 Ethics credits (pending approval)</p>
+                <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
+                <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
+            `
+        },
+        'disabilities-course': {
+            title: 'Invisible Disabilities and Disaster Law - Course Information',
+            content: `
+                <div class="cle-overview">
+                    <h4>CLE Overview:</h4>
+                    <p>This course examines the legal protections and accommodations needed for individuals with invisible disabilities during disasters and emergencies. Participants will explore how to ensure equitable access to emergency services, disaster relief, and legal protections for those with conditions that may not be immediately apparent but significantly impact their ability to navigate crisis situations.</p>
+                </div>
+                <h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Understand legal protections for individuals with invisible disabilities</li>
+                    <li>Learn about accommodation requirements in emergency situations</li>
+                    <li>Explore intersection of disability law and disaster response</li>
+                    <li>Develop strategies for inclusive emergency planning</li>
+                    <li>Address barriers to accessing disaster relief services</li>
+                </ul>
+                <h4>Course Details:</h4>
+                <p><strong>Duration:</strong> 1.5 hours</p>
+                <p><strong>CLE Credits:</strong> 1.5 General credits (pending approval)</p>
+                <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
+                <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
+            `
+        },
+        'foil-course': {
+            title: 'FOIL and Government Transparency - Course Information',
+            content: `
+                <div class="cle-overview">
+                    <h4>CLE Overview:</h4>
+                    <p>This course explores Freedom of Information Law (FOIL) applications in disaster and emergency situations. Participants will learn about public access to emergency management information, government transparency requirements during crises, and the balance between public disclosure and operational security in emergency response.</p>
+                </div>
+                <h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Understand FOIL requirements in emergency contexts</li>
+                    <li>Learn about exemptions and limitations during disasters</li>
+                    <li>Explore public access to emergency management records</li>
+                    <li>Develop strategies for effective FOIL requests in crisis situations</li>
+                    <li>Address transparency vs. security considerations</li>
+                </ul>
+                <h4>Course Details:</h4>
+                <p><strong>Duration:</strong> 1.5 hours</p>
+                <p><strong>CLE Credits:</strong> 1.5 General credits (pending approval)</p>
+                <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
+                <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
+            `
+        },
+        'ai-course': {
+            title: 'AI in Disaster Law - Course Information',
+            content: `
+                <div class="cle-overview">
+                    <h4>CLE Overview:</h4>
+                    <p>This course examines the intersection of artificial intelligence and disaster law, including privacy considerations, automated decision-making in emergency situations, and AI applications in emergency management. Participants will explore legal frameworks for AI use in crisis response and the ethical implications of automated systems in disaster scenarios.</p>
+                </div>
+                <h4>Learning Objectives:</h4>
+                <ul>
+                    <li>Understand AI applications in emergency management</li>
+                    <li>Explore privacy and data protection issues</li>
+                    <li>Learn about automated decision-making in crisis situations</li>
+                    <li>Examine legal frameworks for AI in disaster response</li>
+                    <li>Address ethical considerations of AI in emergency contexts</li>
+                </ul>
+                <h4>Course Details:</h4>
+                <p><strong>Duration:</strong> 1.5 hours</p>
+                <p><strong>CLE Credits:</strong> 1.5 General credits (pending approval)</p>
+                <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
+                <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
+            `
         }
     };
     
@@ -271,6 +368,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                     
                     panelModal.style.display = 'block';
+                }
+            });
+        });
+    }
+    
+    // Course Information Modal Functionality
+    const clickableCourses = document.querySelectorAll('.clickable-course');
+    if (clickableCourses.length > 0) {
+        clickableCourses.forEach(course => {
+            course.addEventListener('click', function() {
+                const courseId = this.getAttribute('data-course');
+                const course = courseData[courseId];
+                
+                if (course) {
+                    courseModalTitle.textContent = course.title;
+                    courseModalContent.innerHTML = course.content;
+                    courseModal.style.display = 'block';
                 }
             });
         });
@@ -345,6 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
             panelModal.style.display = 'none';
             speakerBioModal.style.display = 'none';
             speakerModal.style.display = 'none';
+            courseModal.style.display = 'none';
         });
     });
     
@@ -359,6 +474,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             if (event.target === speakerModal) {
                 speakerModal.style.display = 'none';
+            }
+            if (event.target === courseModal) {
+                courseModal.style.display = 'none';
             }
         });
     }

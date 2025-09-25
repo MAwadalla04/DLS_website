@@ -302,6 +302,32 @@ body {
     box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
 }
 
+.panel-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.course-info-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.course-info-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
 .location {
     color: #666;
     font-weight: 400;
@@ -344,6 +370,16 @@ body {
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
     font-weight: 600;
+}
+
+.clickable-course {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.clickable-course:hover {
+    color: #004080;
+    text-decoration: underline;
 }
 
 .panel-session p {
@@ -881,6 +917,47 @@ body {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
+}
+
+/* Course Information Modal */
+.course-modal-content {
+    max-width: 800px;
+    max-height: 80vh;
+    padding: 2rem;
+}
+
+.course-modal-content h3 {
+    color: #005A9C;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.course-modal-content h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.course-modal-content p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.cle-overview {
+    background: #f8f9fa;
+    border-left: 4px solid #005A9C;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.cle-overview h4 {
+    color: #005A9C;
+    margin-bottom: 1rem;
 }
 
 /* Smooth Scrolling */
