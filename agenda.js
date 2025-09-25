@@ -80,9 +80,16 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Sonja Orgias, Esq.", 
             title: "Chief Counsel",
             organization: "New York City Emergency Management",
-            bio: "<p>Sonja Orgias has served as the Chief Counsel of New York City Emergency Management since August 2022. Ms. Orgias joined the agency in 2015 as Director of Legal Affairs and was appointed to Deputy Chief Counsel in 2021 to oversee the expansion of the agency's legal operations.</p><p>In her role, Ms. Orgias oversees the Office of the Chief Counsel comprised of three units: Legal Affairs, DAFN Legal, and Records Management. She also provides legal guidance to the Commissioner, First Deputy Commissioner, and other executives.</p><p>As a native Brooklynite who is also a City employee, Ms. Orgias is attuned to the unique way that this city runs; the way that its agencies run; and, the expectations of the public.</p><p>She has overseen emergency legal operations in response to numerous incidents in and outside of NYC, including drafting executive orders for extreme weather events, multiple city-to-city agreements with NYC and other municipalities, drafting emergency contracts valued at more than $600 million for the procurement of goods and services during the COVID-19 response, and licenses needed for City operations during other emergency crises.</p><p>In addition, Ms. Orgias was instrumental in starting, and serving in a leadership role of, the inaugural Equity and Diversity Council at New York Emergency Management. Her work has facilitated discussions and raised issues related to diversity, equity, and inclusion, which are necessary components in addressing community needs during emergencies.</p><p>Prior to joining New York City Emergency Management, Ms. Orgias served as an Administrative Law Judge with the New York City Environmental Control Board – OATH and Assistant Counsel with FDNY. She has a background in bankruptcy, immigration, administrative law, and alternative dispute resolution.</p><p>Ms. Orgias received her Juris Doctor Degree from Hofstra University School of Law and her Bachelor's Degree from Boston University and is a proud Stuyvesant High School alumna. She is a member of the New York State Bar Association Committee on Mass Disaster Response and the Judicial Screening Committee for the Kings County Democratic Party. Ms. Orgias is admitted to practice in the State of New York, the Eastern and Southern Districts of New York, and the Supreme Court of the United States.</p>",
+            bio: "<p>Sonja Orgias has served as the Chief Counsel of New York City Emergency Management since August 2022. Ms. Orgias joined the agency in 2015 as Director of Legal Affairs and was appointed to Deputy Chief Counsel in 2021 to oversee the expansion of the agency's legal operations.</p><p>In her role, Ms. Orgias oversees the Office of the Chief Counsel comprised of three units: Legal Affairs, DAFN Legal, and Records Management. She also provides legal guidance to the Commissioner, First Deputy Commissioner, and other executives.</p><p>As a native Brooklynite who is also a City employee, Ms. Orgias is attuned to the unique way that this city runs; the way that its agencies run; and, the expectations of the public.</p><p>She has overseen emergency legal operations in response to numerous incidents in and outside of NYC, including drafting executive orders for extreme weather events, multiple city-to-city agreements with NYC and other municipalities, drafting emergency contracts valued at more than $600 million for the procurement of goods and services during the COVID-19 response, and licenses needed for City operations during other emergency crises.</p><p>In addition, Ms. Orgias was instrumental in starting, and serving in a leadership role of, the inaugural Equity and Diversity Council at New York Emergency Management. Her work has facilitated discussions and raised issues related to diversity, equity, and inclusion, which are necessary components in addressing community needs during emergencies.</p><p>Prior to joining New York City Emergency Management, Ms. Orgias served as an Administrative Law Judge with the New York City Environmental Control Board – OATH and Assistant Counsel with FDNY. She has a background in bankruptcy, immigration, administrative law, and alternative dispute resolution.</p><p>Ms. Orgias received her Juris Doctor Degree from Hofstra University School of Law and her Bachelor's Degree from Boston University and is a proud Stuyvesant High School alumna. She is a member of the New York State Bar Association Committee on Mass Disaster Response. Ms. Orgias is admitted to practice in the State of New York, the Eastern and Southern Districts of New York, and the Supreme Court of the United States.</p>",
             image: "https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/SO%20HS.png?raw=true",
             usePhoto: true
+        },
+        closing: {
+            name: "Traci Wheelwright",
+            title: "Deputy Chief Counsel",
+            organization: "NYC Emergency Management",
+            bio: "<p>Traci Wheelwright serves as Deputy Chief Counsel at NYC Emergency Management, where she leads a team of attorneys and professionals in providing strategic legal guidance on emergency response, civil rights, privacy, and procurement law. With over two decades of legal experience, Traci has built a distinguished career across city, state, and federal agencies, including the NYC Department of Transportation, Amtrak, the Long Island Railroad, and Nassau County.</p><p>Her expertise spans rulemaking, litigation, public contracting, and compliance. At NYCEM, she plays a critical role in shaping legal policy, managing document production and preservation efforts, and supporting the agency's emergency activations through legal research, contract development, and interagency coordination.</p><p>Traci is also a passionate mentor and advocate for professional development, having created and led mentorship programs throughout her career. She holds a J.D. from Hofstra University School of Law and an LL.M. Certificate in Real Estate from New York Law School. Her commitment to public service is matched by her global perspective—she is an avid traveler and lifelong learner with a deep appreciation for language and culture.</p>",
+            image: "SRC/Headshots/Traci Wheelwright headshot.jpg"
         }
     };
     
@@ -114,9 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Robert Wilson',
-                    title: 'AI & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in artificial intelligence applications in disaster law and emergency management.',
+                    title: 'Director of Legal Affairs and Agency Privacy Officer',
+                    organization: 'NYC Emergency Management',
+                    bio: 'Robert Wilson is the Director of Legal Affairs and Agency Privacy Officer for New York City Emergency Management. During emergency operations he serves as an Emergency Support Function Coordinator for transportation, utility, and infrastructure matters and is a member of the Planning Section. With a decade of experience in the field of Emergency Management, he has been involved in numerous operations ranging from smaller localized incidents to the global COVID-19 Pandemic. He also serves as a member of the Artificial Intelligence Committee for New York City Emergency Management.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Robert_Wilson_HS.JPG?raw=true'
                 },
                 {
@@ -154,9 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Traci Wheelwright',
-                    title: 'Ethics & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in ethical frameworks and decision-making in disaster law and emergency management.',
+                    title: 'Deputy Chief Counsel',
+                    organization: 'NYC Emergency Management',
+                    bio: 'Traci Wheelwright serves as Deputy Chief Counsel at NYC Emergency Management, where she leads a team of attorneys and professionals in providing strategic legal guidance on emergency response, civil rights, privacy, and procurement law. With over two decades of legal experience, Traci has built a distinguished career across city, state, and federal agencies, including the NYC Department of Transportation, Amtrak, the Long Island Railroad, and Nassau County. Her expertise spans rulemaking, litigation, public contracting, and compliance. At NYCEM, she plays a critical role in shaping legal policy, managing document production and preservation efforts, and supporting the agency\'s emergency activations through legal research, contract development, and interagency coordination. Traci is also a passionate mentor and advocate for professional development, having created and led mentorship programs throughout her career. She holds a J.D. from Hofstra University School of Law and an LL.M. Certificate in Real Estate from New York Law School. Her commitment to public service is matched by her global perspective—she is an avid traveler and lifelong learner with a deep appreciation for language and culture.',
                     image: 'SRC/Headshots/Traci Wheelwright headshot.jpg'
                 }
             ]
@@ -187,9 +194,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Rob DeVoogd',
-                    title: 'FOIL & Government Transparency Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in Freedom of Information Law and government transparency in emergency situations.',
+                    title: 'Senior Agency Counsel and FOIL Officer',
+                    organization: 'NYC Emergency Management',
+                    bio: 'Rob DeVoogd is Senior Agency Counsel and FOIL officer at New York City Emergency Management. He has been with the agency for 8 years.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Rob%20DeVoogd%20Headshot.jpg?raw=true'
                 }
             ]
@@ -199,9 +206,9 @@ document.addEventListener('DOMContentLoaded', function() {
             speakers: [
                 {
                     name: 'Dennis Boyd',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    title: 'Attorney, Office of Chief Counsel',
+                    organization: 'NYC Department of Emergency Management',
+                    bio: 'Dennis Boyd grew up in New York City and attended Dartmouth College and Boston University School of Law. He works in the Office of Chief Counsel of New York City\'s Department of Emergency Management (NYCEM), where he oversees the Disability and Access and Functional Needs program. This entails a focus on agency compliance with human rights laws for people who tend to be most adversely affected during large scale emergencies, including people with disabilities, the elderly, children, non-English speakers, the unhoused and others. He has thirty-eight years\' experience handling trials and appeals, conducting trainings, lobbying and advocating for low-income New Yorkers, with the last thirty of those years focused primarily on the rights of people with disabilities. Before joining the City, he was with a local disability Protection and Advocacy law firm, trying cases and developing policy around de-institutionalization, access to housing, health care and public accommodations and on the implementation of the federal ADA, the Help America Vote Act, and on NYC Building Code revisions. He has also worked with individuals seeking accommodations on college and graduate school admission tests and on professional licensing exams, as well as in the areas of housing discrimination, elder law, social security benefits and estate planning.',
                     image: 'SRC/Headshots/Dennis Boyd headshot.jpg'
                 },
                 {
@@ -220,9 +227,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Jo Anne Simon',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    title: 'New York State Assemblymember',
+                    organization: '52nd District',
+                    bio: 'New York Assemblymember Jo Anne Simon has been fighting for the inclusion of people with disabilities her entire career. Through her Brooklyn, NY based law firm she has represented people with disabilities across the country. A graduate of Fordham University School of Law, Ms. Simon is known for her expertise on the Americans with Disabilities Act (ADA), particularly as it relates to higher education, high stakes testing and professional licensing bodies. She acted as lead counsel for the successful plaintiff in the seminal case of Bartlett v. New York State Board of Law Examiners. Ms. Simon was also an adjunct Associate Professor at Fordham Law School for nearly 20 years and served as staff attorney at Hofstra Law School\'s Disabilities Law Clinic from 1992-1996. Ms. Simon testified before the U.S. Senate in support of the ADA Amendments Act in 2008. She was instrumental in securing passage of California\'s AB-2122, advising the Assembly and testifying before the Senate in support of the bill to ban "flagging" the scores of test takers who received disability accommodations on the LSAT. Her work was also instrumental in the U.S. Department of Justice\'s decision to bring pattern and practice claims against the Law School Admission Council in DFEH, et al v. LSAC. Disability rights advocacy precedes her career in the law. Ms. Simon holds an MA in the Education of the Deaf from Gallaudet University and a BA Speech pathology from Iona College. She has worked as a teacher of deaf and deaf-blind students, as a postsecondary disability services provider and as a certified sign language interpreter for 20 years. She is a founding member of the Association on Higher Education And Disability (AHEAD). She regularly advises student with disabilities, their parents and school administrators and regularly associates with colleagues around the country in pursuing disability rights matters. Long active in civic affairs, in 2014 Ms. Simon was elected to the N.Y.S. Assembly for the 52nd District where she has led on issues such as the rights of women, children, and the elderly, the reduction of gun violence, environmental justice and resiliency and the rights of individuals with disabilities. She created and has organized Dyslexia Awareness Days at the New York State Capital for 10 years, passed a landscape shifting bill protecting rights of students with dyslexia and related learning disabilities and serves on the Steering Committee of the State Action Plan on Literacy. She has worked to increase the number of women in politics and government. She chairs the Assembly\'s Committee on Mental Health.',
                     image: 'SRC/Headshots/Jo Anne Simon headshot.jpg'
                 },
                 {
