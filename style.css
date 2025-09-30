@@ -65,11 +65,6 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-    color: #005A9C;
 }
 
 .nav-menu a.active-page {
@@ -91,11 +86,6 @@ body {
 
 .dropdown-arrow {
     font-size: 0.8rem;
-    transition: transform 0.3s ease;
-}
-
-.dropdown:hover .dropdown-arrow {
-    transform: rotate(180deg);
 }
 
 .dropdown-content {
@@ -118,30 +108,16 @@ body {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     display: block;
-    transition: all 0.3s ease;
     border-radius: 0;
 }
 
 .dropdown-content a:hover {
     background-color: #f3f4f6;
     color: #dc2626;
-    padding-left: 2rem;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    animation: fadeInDown 0.3s ease;
-}
-
-@keyframes fadeInDown { 
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .register-btn {
@@ -149,11 +125,6 @@ body {
     color: white !important;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.register-btn:hover {
-    background: #004080 !important;
 }
 
 .nav-register-btn {
@@ -162,17 +133,8 @@ body {
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
     font-weight: 700;
-    transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 90, 156, 0.3);
     border: 2px solid #005A9C;
-}
-
-.nav-register-btn:hover {
-    background: #005A9C !important;
-    color: #ffffff !important;
-    border-color: #005A9C;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 90, 156, 0.4);
 }
 
 .hamburger {
@@ -186,7 +148,6 @@ body {
     height: 3px;
     background: #333;
     margin: 3px 0;
-    transition: 0.3s;
 }
 
 /* Hero Section */
@@ -276,11 +237,6 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
-.detail-item:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
-}
-
 .calendar-item {
     cursor: pointer;
 }
@@ -291,10 +247,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.calendar-link:hover {
-    text-decoration: underline;
 }
 
 .hero-details .detail-item a {
@@ -320,36 +272,10 @@ body {
     font-size: 0.95rem;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
     text-decoration: none;
     display: inline-block;
     box-shadow: 0 4px 12px rgba(0, 90, 156, 0.3);
     text-shadow: none;
-}
-
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.btn-primary:hover {
-    background: #005A9C;
-    color: #ffffff;
-    border-color: #005A9C;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 90, 156, 0.4);
-}
-
-.btn-primary:hover::before {
-    left: 100%;
 }
 
 .btn-secondary {
@@ -361,15 +287,8 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-}
-
-.btn-secondary:hover {
-    background: white;
-    color: #005A9C;
-    transform: translateY(-2px);
 }
 
 /* About Section */
@@ -489,14 +408,7 @@ body {
     background: #f8f9fa;
     border-radius: 8px;
     padding: 1rem;
-    transition: all 0.3s ease;
     border: 1px solid #e9ecef;
-}
-
-.about-speaker-card:hover {
-    background: #e9ecef;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .about-speaker-image {
@@ -528,12 +440,7 @@ body {
     color: #005A9C;
     margin-bottom: 0.3rem;
     cursor: pointer;
-    transition: color 0.3s ease;
     font-weight: 600;
-}
-
-.about-speaker-name:hover {
-    color: #004080;
 }
 
 .about-speaker-title {
@@ -610,14 +517,12 @@ body {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: #005A9C;
-    box-shadow: 0 0 0 3px rgba(0,90,156,0.1);
 }
 
 .contact-form textarea {
@@ -652,21 +557,11 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
 
 .tab-btn.active {
     background: #005A9C;
     color: white;
-}
-
-.tab-btn:hover {
-    background: #005A9C;
-    color: white;
-}
-
-.tab-btn.active:hover {
-    background: #004080;
 }
 
 .day-schedule {
@@ -686,12 +581,6 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     margin-bottom: 1rem;
-    transition: all 0.3s ease;
-}
-
-.schedule-item:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
 }
 
 .time {
@@ -775,11 +664,6 @@ body {
     text-align: center;
 }
 
-.keynote-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0,90,156,0.25);
-}
-
 .keynote-card .speaker-info {
     width: 100%;
 }
@@ -828,15 +712,9 @@ body {
     color: #005A9C;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
     font-size: 0.95rem;
     white-space: nowrap;
     min-width: fit-content;
-}
-
-.speaker-tabs .tab-btn:hover {
-    background: #005A9C;
-    color: white;
 }
 
 .speaker-tabs .tab-btn.active {
@@ -855,12 +733,6 @@ body {
 
 .speakers-grid.panel.active {
     display: flex;
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .speakers-grid {
@@ -878,15 +750,9 @@ body {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
     width: 240px;
     margin-bottom: 1.5rem;
     flex: 0 0 auto;
-}
-
-.speaker-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .speaker-card img {
@@ -906,15 +772,7 @@ body {
 .speaker-name {
     cursor: pointer;
     color: #005A9C !important;
-    transition: all 0.3s ease;
     text-decoration: underline;
-    text-decoration-color: transparent;
-}
-
-.speaker-name:hover {
-    color: #004080 !important;
-    text-decoration-color: #004080;
-    transform: translateY(-1px);
 }
 
 .speaker-title {
@@ -952,13 +810,6 @@ body {
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: #005885;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,119,181,0.3);
 }
 
 /* Venue Section */
@@ -1043,13 +894,7 @@ body {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
     position: relative;
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .pricing-card.featured {
@@ -1137,16 +982,9 @@ body {
     box-shadow: 0 8px 30px rgba(0,0,0,0.1);
     padding: 2.5rem;
     text-align: center;
-    transition: all 0.3s ease;
     width: 400px;
     max-width: 100%;
     border: 2px solid #e9ecef;
-}
-
-.speaker-card-large:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-    border-color: #005A9C;
 }
 
 .speaker-card-large .speaker-image {
@@ -1175,11 +1013,6 @@ body {
     color: #005A9C;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.speaker-card-large .speaker-name:hover {
-    color: #004080;
 }
 
 .speaker-card-large .speaker-title {
@@ -1233,11 +1066,6 @@ body {
 .footer-section a {
     color: #d1d5db;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-    color: #005A9C;
 }
 
 .social-links {
@@ -1248,11 +1076,6 @@ body {
 .social-link {
     color: #d1d5db;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-link:hover {
-    color: #005A9C;
 }
 
 .footer-bottom {
@@ -1272,7 +1095,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
-    animation: fadeIn 0.3s ease;
 }
 
 .modal-content {
@@ -1283,7 +1105,6 @@ body {
     width: 90%;
     max-width: 500px;
     position: relative;
-    animation: slideIn 0.3s ease;
 }
 
 .close {
@@ -1294,11 +1115,6 @@ body {
     font-weight: bold;
     cursor: pointer;
     color: #666;
-    transition: color 0.3s ease;
-}
-
-.close:hover {
-    color: #333;
 }
 
 .modal-content h3 {
@@ -1325,31 +1141,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
     border-color: #005A9C;
-    box-shadow: 0 0 0 3px rgba(0,90,156,0.1);
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Speaker Bio Modal */
 #speakerModal .modal-content {
@@ -1667,7 +1466,7 @@ body {
 
 /* Smooth Scrolling */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 /* Extra styles for large screens removed since we now use centered layout */
