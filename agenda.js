@@ -102,14 +102,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     name: 'Aaron Friedman',
                     title: 'Deputy Chief Privacy Officer',
                     organization: 'NYC Office of Information Privacy',
-                    bio: 'Aaron Friedman is Deputy Chief Privacy Officer, has been part of the NYC Office of Information Privacy since 2019. He counsels agencies and the Chief Privacy Officer on privacy issues and teaches privacy law at Fordham Law School.',
+                    bio: 'Aaron Friedman, Deputy Chief Privacy Officer, has been part of the NYC Office of Information Privacy since 2019. He counsels agencies and the Chief Privacy Officer on privacy issues and teaches privacy law at Fordham Law School. Before joining the Office of Information Privacy, Aaron was a senior counsel with the NYC Department of Social Services. Aaron is a graduate of the Benjamin N. Cardozo School of Law and CUNY Queens College.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Aaron%20Friedman%20headshot.jpg?raw=true'
                 },
                 {
                     name: 'Ginger Armbruster',
-                    title: 'AI & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in artificial intelligence applications in disaster law and emergency management.',
+                    title: 'Chief Privacy Officer',
+                    organization: 'City of Seattle',
+                    bio: 'As the City of Seattle\'s Chief Privacy Officer, Ginger Armbruster leads a team of privacy specialists in the execution of the City\'s Privacy Program, following a principles-based approach to the City\'s management of the public\'s personal and sensitive information. Prior to this role, she worked for Microsoft on an international team of privacy specialists to resolve issues associated with multi-million-dollar marketing initiatives. Before moving into privacy, she spent the first 20 years of her career working in sales and marketing for Fortune 500 companies such as IBM, Hewlett-Packard and Johnson & Johnson, as well as several medical technology startup companies.',
                     image: 'SRC/Headshots/Ginger Armbruster headshot.jpg'
                 },
                 {
@@ -128,9 +128,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Sarah Carrier',
-                    title: 'AI & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in artificial intelligence applications in disaster law and emergency management.',
+                    title: 'Data Privacy & Responsible AI Program Manager',
+                    organization: 'City of Seattle',
+                    bio: 'Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
                     image: 'SRC/Headshots/Sarah Carrier headshot.jpg'
                 }
             ]
@@ -172,13 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'FOIL and Government Transparency Panel',
             speakers: [
                 {
-                    name: 'Arya Sundaram',
-                    title: 'FOIL & Government Transparency Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in Freedom of Information Law and government transparency in emergency situations.',
-                    image: 'SRC/Headshots/Arya Sundaram headshot.jpg'
-                },
-                {
                     name: 'Elisa Lee',
                     title: 'FOIL & Government Transparency Expert',
                     organization: 'Organization TBD',
@@ -206,23 +199,23 @@ document.addEventListener('DOMContentLoaded', function() {
             speakers: [
                 {
                     name: 'Dennis Boyd',
-                    title: 'Attorney, Office of Chief Counsel',
-                    organization: 'NYC Department of Emergency Management',
+                    title: 'Senior Counsel',
+                    organization: 'NYC Office of Emergency Management',
                     bio: 'Dennis Boyd grew up in New York City and attended Dartmouth College and Boston University School of Law. He works in the Office of Chief Counsel of New York City\'s Department of Emergency Management (NYCEM), where he oversees the Disability and Access and Functional Needs program. This entails a focus on agency compliance with human rights laws for people who tend to be most adversely affected during large scale emergencies, including people with disabilities, the elderly, children, non-English speakers, the unhoused and others. He has thirty-eight years\' experience handling trials and appeals, conducting trainings, lobbying and advocating for low-income New Yorkers, with the last thirty of those years focused primarily on the rights of people with disabilities. Before joining the City, he was with a local disability Protection and Advocacy law firm, trying cases and developing policy around de-institutionalization, access to housing, health care and public accommodations and on the implementation of the federal ADA, the Help America Vote Act, and on NYC Building Code revisions. He has also worked with individuals seeking accommodations on college and graduate school admission tests and on professional licensing exams, as well as in the areas of housing discrimination, elder law, social security benefits and estate planning.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Dennis_Boyd\'s_HS.jpg?raw=true'
                 },
                 {
                     name: 'Dennis Debbaudt',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
+                    title: 'Autism Advocate',
+                    organization: 'Autism Advocate',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Debbaudt%20Headshot.jpg?raw=true'
                 },
                 {
                     name: 'Howard Rosenblum',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    title: 'Deaf Rights Attorney and Advocate',
+                    organization: 'Founder and CEO, Deaf Advocacy',
+                    bio: 'Howard Rosenblum is the founder and Chair of Deaf Equality, which he established to achieve true equality for all Deaf, Hard of Hearing, DeafBlind, DeafDisabled, and Late Deafened people in the USA and worldwide. The goal of this effort is to emphasize system change through litigation, policy and regulatory changes, and consulting. Licensed in Illinois as a lawyer for 32 years and adept as an computer engineer for 36 years, Howard has extensive experience in strategizing and directing successful precedential cases such as NAD v. Netflix, NAD v. Harvard, NAD v. MIT, Campbell v. U.S. Department of Agriculture, Perez v. Sturgis Public Schools, and NAD v. Donald Trump. In addition, he has guided significant policy changes including convincing the US Department of Transportation to provide exemptions which led to over 1,500 Deaf individuals to obtain Commercial Driver\'s Licenses (CDLs) and drive trucks as well as getting the Federal Communications Commission to require texting and support the provision of an ASL option for the 988 suicide hotline. Howard has a B.S. in Computer Engineering from the University of Arizona, and a J.D. from the Illinois Institute of Technology/Chicago-Kent College of Law. He also serves as the legal advisor to the World Federation of the Deaf (WFD).',
                     image: 'SRC/Headshots/Howard Rosenblum headshot.jpg'
                 },
                 {
@@ -241,10 +234,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Saiena Shafiezadeh',
-                    title: 'Invisible Disabilities & Disaster Law Expert',
-                    organization: 'Organization TBD',
+                    title: 'Attorney, Office of Chief Counsel',
+                    organization: 'NYC Office of Emergency Management',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
                     image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Shafiezadeh%20Headshot.jpg?raw=true'
+                },
+                {
+                    name: 'Lisa Bothwell',
+                    title: 'Federal Policy Professional',
+                    organization: 'State Bar of Texas Licensed Attorney',
+                    bio: 'Seasoned federal policy professional with over a decade of federal legal analysis in the areas of disability rights, civil rights, technology, rights of older adults, emergency management, federal funding, and healthcare laws and policies. Experienced in regulatory drafting, legal research and writing, and summarizing and responding to public comments on notices of proposed rulemaking. Deployed to more than 15 major disasters as a federal employee–including Hurricanes Harvey, Irma, and Maria—managing up to 39 federal staff and contractors. State Bar of Texas licensed attorney. President of the Deaf and Hard of Hearing Bar Association.',
+                    image: 'SRC/Headshots/Lisa Bothwell headshot.jpg'
                 }
             ]
         }

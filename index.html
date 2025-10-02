@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Preload critical speaker images -->
+    <link rel="preload" as="image" href="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/MAT.jpg?raw=true">
+    <link rel="preload" as="image" href="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/SO%20HS.png?raw=true">
 </head>
 <body>
     <!-- Header -->
@@ -39,6 +42,11 @@
                     <h1>New York City Emergency Management Presents:</h1>
                     <h2 class="hero-subtitle">Disaster Law Symposium</h2>
                 </div>
+                <div class="hero-theme-title">
+                    <div class="theme-accent-line"></div>
+                    <p class="theme-text"><span class="theme-kicker">Law in Crisis:</span> <span class="theme-rest">Building Capacity, Compliance, and Community in Emergency Management</span></p>
+                    <div class="theme-accent-line"></div>
+                </div>
                 <div class="hero-details">
                     <div class="detail-item calendar-item">
                         <i class="fas fa-calendar-alt"></i>
@@ -59,10 +67,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-title-column">
-                    <h1 class="symposium-title">Law in Crisis: Building Capacity, Compliance, and Community in Emergency Management</h1>
-                </div>
-                <div class="about-info-column">
+                <div class="about-info-column-full">
                     <h2>About the Symposium</h2>
                     <p class="section-subtitle">In an era of increasingly complex emergencies—ranging from climate-driven disasters to public health crises and cyber threats—legal preparedness is essential to effective emergency management. The Disaster Law Symposium, hosted by NYCEM, is a timely initiative convening legal and policy professionals to examine legal frameworks, ethical questions, and interagency coordination challenges that arise during crises.</p>
                 </div>
@@ -83,7 +88,7 @@
                 <div class="featured-speaker-card keynote-card">
                     <div class="featured-speaker-content">
                         <div class="featured-speaker-image">
-                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/MAT.jpg?raw=true" alt="MaryAnn Tierney" class="speaker-img">
+                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/MAT.jpg?raw=true" alt="MaryAnn Tierney" class="speaker-img" loading="eager" decoding="async">
                         </div>
                         <div class="featured-speaker-info">
                             <h3 class="featured-speaker-name">MaryAnn Tierney</h3>
@@ -98,7 +103,7 @@
                 <div class="featured-speaker-card counsel-card">
                     <div class="featured-speaker-content">
                         <div class="featured-speaker-image">
-                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/SO%20HS.png?raw=true" alt="Sonja Orgias" class="speaker-img">
+                            <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/SO%20HS.png?raw=true" alt="Sonja Orgias" class="speaker-img" loading="eager" decoding="async">
                         </div>
                         <div class="featured-speaker-info">
                             <h3 class="featured-speaker-name">Sonja Orgias, Esq.</h3>
