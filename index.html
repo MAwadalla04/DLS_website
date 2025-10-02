@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Preload critical speaker images -->
+    <!-- Preload critical images - Hero image gets highest priority -->
+    <link rel="preload" as="image" href="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg?raw=true" fetchpriority="high">
     <link rel="preload" as="image" href="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/MaryAnn_Tierney_1.jpg?raw=true">
     <link rel="preload" as="image" href="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Sonja_Orgias.jpg?raw=true">
 </head>
@@ -36,6 +37,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Hidden hero image for priority loading -->
+        <img src="https://github.com/MAwadalla04/DLS_website/blob/main/SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg?raw=true" 
+             alt="Disaster Law Symposium Hero" 
+             style="display: none;" 
+             fetchpriority="high" 
+             loading="eager">
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-title">

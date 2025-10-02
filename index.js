@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Optimize hero image loading with highest priority
+    const heroImage = document.querySelector('.hero img[fetchpriority="high"]');
+    if (heroImage) {
+        // Force immediate loading of hero image
+        heroImage.addEventListener('load', function() {
+            console.log('Hero image loaded successfully');
+            // Add a class to indicate hero is ready
+            document.querySelector('.hero').classList.add('hero-loaded');
+        });
+        
+        // If hero image is already cached, mark as loaded immediately
+        if (heroImage.complete) {
+            document.querySelector('.hero').classList.add('hero-loaded');
+        }
+        
+        // Preload the hero image immediately
+        const heroImg = new Image();
+        heroImg.src = heroImage.src;
+        heroImg.onload = function() {
+            document.querySelector('.hero').classList.add('hero-loaded');
+        };
+    }
+
     // Optimize speaker image loading
     const speakerImages = document.querySelectorAll('.speaker-img');
     speakerImages.forEach(img => {
