@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Deputy Chief Counsel",
             organization: "NYC Emergency Management",
             bio: "<p>Traci Wheelwright serves as Deputy Chief Counsel at NYC Emergency Management, where she leads a team of attorneys and professionals in providing strategic legal guidance on emergency response, civil rights, privacy, and procurement law. With over two decades of legal experience, Traci has built a distinguished career across city, state, and federal agencies, including the NYC Department of Transportation, Amtrak, the Long Island Railroad, and Nassau County.</p><p>Her expertise spans rulemaking, litigation, public contracting, and compliance. At NYCEM, she plays a critical role in shaping legal policy, managing document production and preservation efforts, and supporting the agency's emergency activations through legal research, contract development, and interagency coordination.</p><p>Traci is also a passionate mentor and advocate for professional development, having created and led mentorship programs throughout her career. She holds a J.D. from Hofstra University School of Law and an LL.M. Certificate in Real Estate from New York Law School. Her commitment to public service is matched by her global perspective—she is an avid traveler and lifelong learner with a deep appreciation for language and culture.</p>",
-            image: "https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/TW_HS.jpg?raw=true"
+            image: "https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Traci_Wheelwright_1.jpg?raw=true"
         }
     };
     
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Deputy Chief Counsel',
                     organization: 'NYC Emergency Management',
                     bio: 'Traci Wheelwright serves as Deputy Chief Counsel at NYC Emergency Management, where she leads a team of attorneys and professionals in providing strategic legal guidance on emergency response, civil rights, privacy, and procurement law. With over two decades of legal experience, Traci has built a distinguished career across city, state, and federal agencies, including the NYC Department of Transportation, Amtrak, the Long Island Railroad, and Nassau County. Her expertise spans rulemaking, litigation, public contracting, and compliance. At NYCEM, she plays a critical role in shaping legal policy, managing document production and preservation efforts, and supporting the agency\'s emergency activations through legal research, contract development, and interagency coordination. Traci is also a passionate mentor and advocate for professional development, having created and led mentorship programs throughout her career. She holds a J.D. from Hofstra University School of Law and an LL.M. Certificate in Real Estate from New York Law School. Her commitment to public service is matched by her global perspective—she is an avid traveler and lifelong learner with a deep appreciation for language and culture.',
-                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/TW_HS.jpg?raw=true'
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/Traci_Wheelwright_1.jpg?raw=true'
                 }
             ]
         },
