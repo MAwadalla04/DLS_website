@@ -11,46 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Calendar functionality - simple .ics file download
-    const addToCalendarLink = document.getElementById('add-to-calendar');
-    
-    if (addToCalendarLink) {
-        addToCalendarLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            createCalendarFile();
-        });
-    }
-
-    function createCalendarFile() {
-        // Event details
-        const eventTitle = 'Disaster Law Symposium';
-        const eventDescription = 'Law in Crisis: Building Capacity, Compliance, and Community in Emergency Management';
-        const eventLocation = 'Brooklyn Law School';
-        const eventStartDate = '20251105T090000'; // Format: YYYYMMDDTHHMMSS
-        const eventEndDate = '20251105T170000';   // Assuming it's an all-day event
-        
-        // Create an iCal file that works with any calendar app
-        const icsContent = 'BEGIN:VCALENDAR\n' +
-            'VERSION:2.0\n' +
-            'BEGIN:VEVENT\n' +
-            'URL:' + window.location.href + '\n' +
-            'DTSTART:' + eventStartDate + '\n' +
-            'DTEND:' + eventEndDate + '\n' +
-            'SUMMARY:' + eventTitle + '\n' +
-            'DESCRIPTION:' + eventDescription + '\n' +
-            'LOCATION:' + eventLocation + '\n' +
-            'END:VEVENT\n' +
-            'END:VCALENDAR';
-        
-        // Create and download the file
-        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = 'disaster_law_symposium.ics';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
 
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
