@@ -174,16 +174,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     name: 'Elisa Lee',
                     title: 'FOIL & Government Transparency Expert',
-                    organization: 'Organization TBD',
+                    organization: 'NYC Law Department',
                     bio: 'Expert in Freedom of Information Law and government transparency in emergency situations.',
                     image: 'SRC/Headshots/Elisa Lee headshot.jpg'
                 },
                 {
                     name: 'Gwynne Hogan',
-                    title: 'FOIL & Government Transparency Expert',
-                    organization: 'Organization TBD',
-                    bio: 'Expert in Freedom of Information Law and government transparency in emergency situations.',
-                    image: 'SRC/Headshots/Gwynne Hogan headshot.jpg'
+                    title: 'Senior Reporter',
+                    organization: 'New York City',
+                    bio: 'Gwynne Hogan is a senior reporter covering immigration, homelessness, and many things in between. Her coverage of the migrant crisis earned her the Newswomen\'s Club of New York\'s Journalist of the Year award in 2023. Her reporting on the COVID-19 pandemic forced the New York City officials to admit they were undercounting the dead, and earned her a 2021 Gracie award.',
+                    image: 'https://github.com/MAwadalla04/DLS_website/blob/main/SRC/Headshots/gwynne_headshot_1-scaled.webp?raw=true'
                 },
                 {
                     name: 'Rob DeVoogd',

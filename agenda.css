@@ -207,7 +207,9 @@ body {
 .time {
     font-weight: 700;
     color: #005A9C;
-    min-width: 100px;
+    min-width: 140px;
+    max-width: 140px;
+    flex-shrink: 0;
 }
 
 .session h4 {
@@ -272,6 +274,12 @@ body {
     border: 2px solid #005A9C;
     border-radius: 12px;
     margin-bottom: 1.5rem;
+}
+
+.parallel-session .time {
+    min-width: 140px;
+    max-width: 140px;
+    flex-shrink: 0;
 }
 
 .parallel-panels {

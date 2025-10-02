@@ -157,7 +157,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg');
+    background: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('https://github.com/MAwadalla04/DLS_website/blob/main/SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg?raw=true');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
