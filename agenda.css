@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Moderator Label Styles */
+.moderator-label {
+    background: #005A9C;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 body {
     font-family: 'Montserrat', BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;

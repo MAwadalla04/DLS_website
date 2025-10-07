@@ -120,18 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'SRC/Headshots/Jiahao_Chen.jpg'
                 },
                 {
-                    name: 'Robert Wilson',
-                    title: 'Director of Legal Affairs and Agency Privacy Officer',
-                    organization: 'NYC Emergency Management',
-                    bio: 'Robert Wilson is the Director of Legal Affairs and Agency Privacy Officer for New York City Emergency Management. During emergency operations he serves as an Emergency Support Function Coordinator for transportation, utility, and infrastructure matters and is a member of the Planning Section. With a decade of experience in the field of Emergency Management, he has been involved in numerous operations ranging from smaller localized incidents to the global COVID-19 Pandemic. He also serves as a member of the Artificial Intelligence Committee for New York City Emergency Management.',
-                    image: 'SRC/Headshots/Robert_Wilson.JPG'
-                },
-                {
                     name: 'Sarah Carrier',
                     title: 'Data Privacy & Responsible AI Program Manager',
                     organization: 'City of Seattle',
                     bio: 'Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
                     image: 'SRC/Headshots/Sarah_Carrier_1.jpg'
+                },
+                {
+                    name: 'Robert Wilson',
+                    title: 'Director of Legal Affairs and Agency Privacy Officer',
+                    organization: 'NYC Emergency Management',
+                    bio: 'Robert Wilson is the Director of Legal Affairs and Agency Privacy Officer for New York City Emergency Management. During emergency operations he serves as an Emergency Support Function Coordinator for transportation, utility, and infrastructure matters and is a member of the Planning Section. With a decade of experience in the field of Emergency Management, he has been involved in numerous operations ranging from smaller localized incidents to the global COVID-19 Pandemic. He also serves as a member of the Artificial Intelligence Committee for New York City Emergency Management.',
+                    image: 'SRC/Headshots/Robert_Wilson.JPG',
+                    moderator: true
                 }
             ]
         },
@@ -164,7 +165,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Deputy Chief Counsel',
                     organization: 'NYC Emergency Management',
                     bio: 'Traci Wheelwright serves as Deputy Chief Counsel at NYC Emergency Management, where she leads a team of attorneys and professionals in providing strategic legal guidance on emergency response, civil rights, privacy, and procurement law. With over two decades of legal experience, Traci has built a distinguished career across city, state, and federal agencies, including the NYC Department of Transportation, Amtrak, the Long Island Railroad, and Nassau County. Her expertise spans rulemaking, litigation, public contracting, and compliance. At NYCEM, she plays a critical role in shaping legal policy, managing document production and preservation efforts, and supporting the agency\'s emergency activations through legal research, contract development, and interagency coordination. Traci is also a passionate mentor and advocate for professional development, having created and led mentorship programs throughout her career. She holds a J.D. from Hofstra University School of Law and an LL.M. Certificate in Real Estate from New York Law School. Her commitment to public service is matched by her global perspective—she is an avid traveler and lifelong learner with a deep appreciation for language and culture.',
-                    image: 'SRC/Headshots/Traci_Wheelwright_1.jpg'
+                    image: 'SRC/Headshots/Traci_Wheelwright_1.jpg',
+                    moderator: true
                 }
             ]
         },
@@ -181,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     name: 'Gwynne Hogan',
                     title: 'Senior Reporter',
-                    organization: 'New York City',
+                    organization: 'THE CITY',
                     bio: 'Gwynne Hogan is a senior reporter covering immigration, homelessness, and many things in between. Her coverage of the migrant crisis earned her the Newswomen\'s Club of New York\'s Journalist of the Year award in 2023. Her reporting on the COVID-19 pandemic forced the New York City officials to admit they were undercounting the dead, and earned her a 2021 Gracie award.',
                     image: 'SRC/Headshots/gwynne_headshot_1-scaled.webp'
                 },
@@ -190,7 +192,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Senior Agency Counsel and FOIL Officer',
                     organization: 'NYC Emergency Management',
                     bio: 'Rob DeVoogd is Senior Agency Counsel and FOIL officer at New York City Emergency Management. He has been with the agency for 8 years.',
-                    image: 'SRC/Headshots/Rob_DeVoogd_1.jpg'
+                    image: 'SRC/Headshots/Rob_DeVoogd_1.jpg',
+                    moderator: true
                 }
             ]
         },
@@ -199,22 +202,23 @@ document.addEventListener('DOMContentLoaded', function() {
             speakers: [
                 {
                     name: 'Dennis Boyd',
-                    title: 'Senior Counsel',
+                    title: 'Senior Disability and Civil Rights Counsel',
                     organization: 'NYC Office of Emergency Management',
                     bio: 'Dennis Boyd grew up in New York City and attended Dartmouth College and Boston University School of Law. He works in the Office of Chief Counsel of New York City\'s Department of Emergency Management (NYCEM), where he oversees the Disability and Access and Functional Needs program. This entails a focus on agency compliance with human rights laws for people who tend to be most adversely affected during large scale emergencies, including people with disabilities, the elderly, children, non-English speakers, the unhoused and others. He has thirty-eight years\' experience handling trials and appeals, conducting trainings, lobbying and advocating for low-income New Yorkers, with the last thirty of those years focused primarily on the rights of people with disabilities. Before joining the City, he was with a local disability Protection and Advocacy law firm, trying cases and developing policy around de-institutionalization, access to housing, health care and public accommodations and on the implementation of the federal ADA, the Help America Vote Act, and on NYC Building Code revisions. He has also worked with individuals seeking accommodations on college and graduate school admission tests and on professional licensing exams, as well as in the areas of housing discrimination, elder law, social security benefits and estate planning.',
-                    image: 'SRC/Headshots/Dennis_Boyd\'s_1.jpg'
+                    image: 'SRC/Headshots/Dennis_Boyd\'s_1.jpg',
+                    moderator: true
                 },
                 {
                     name: 'Dennis Debbaudt',
                     title: 'Autism Advocate',
-                    organization: 'Autism Advocate',
+                    organization: '',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
                     image: 'SRC/Headshots/Dennis_Debbaudt_1.jpg'
                 },
                 {
                     name: 'Howard Rosenblum',
-                    title: 'Deaf Rights Attorney and Advocate',
-                    organization: 'Founder and CEO, Deaf Advocacy',
+                    title: 'Founder and CEO, Deaf Equality',
+                    organization: 'Deaf Equality',
                     bio: 'Howard Rosenblum is the founder and Chair of Deaf Equality, which he established to achieve true equality for all Deaf, Hard of Hearing, DeafBlind, DeafDisabled, and Late Deafened people in the USA and worldwide. The goal of this effort is to emphasize system change through litigation, policy and regulatory changes, and consulting. Licensed in Illinois as a lawyer for 32 years and adept as an computer engineer for 36 years, Howard has extensive experience in strategizing and directing successful precedential cases such as NAD v. Netflix, NAD v. Harvard, NAD v. MIT, Campbell v. U.S. Department of Agriculture, Perez v. Sturgis Public Schools, and NAD v. Donald Trump. In addition, he has guided significant policy changes including convincing the US Department of Transportation to provide exemptions which led to over 1,500 Deaf individuals to obtain Commercial Driver\'s Licenses (CDLs) and drive trucks as well as getting the Federal Communications Commission to require texting and support the provision of an ASL option for the 988 suicide hotline. Howard has a B.S. in Computer Engineering from the University of Arizona, and a J.D. from the Illinois Institute of Technology/Chicago-Kent College of Law. He also serves as the legal advisor to the World Federation of the Deaf (WFD).',
                     image: 'SRC/Headshots/Howard_Rosenblum.jpg'
                 },
@@ -233,18 +237,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'SRC/Headshots/Kristine_Hoffman.jpg'
                 },
                 {
-                    name: 'Saiena Shafiezadeh',
-                    title: 'Attorney, Office of Chief Counsel',
-                    organization: 'NYC Office of Emergency Management',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
-                    image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg'
-                },
-                {
                     name: 'Lisa Bothwell',
                     title: 'Federal Policy Professional',
                     organization: 'State Bar of Texas Licensed Attorney',
                     bio: 'Lisa Bothwell is a Texas-licensed attorney who, as a federal policy and program analyst with more than a decade of experience, navigates the intersection of disability rights, emergency management, healthcare law, federal funding, and public program operations. Until recently, she served at the Administration for Community Living, where she engaged in legal research and writing and managed agency responses to federal policy as part of the Administrative Procedures Act process. Additionally, she was part of teams that drafted and managed public comments for both Section 1557 of the Affordable Care Act of 2010 and Section 504 of the Rehabilitation Act of 1973 rulemakings. Before ACL, Ms. Bothwell previously held key advisory roles in accessible emergency management at the Federal Emergency Management Agency (FEMA). While balancing federal legal and programmatic requirements as well as operational coordination, she deployed to over 15 major disasters—including Hurricanes Harvey, Irma, and Maria—leading teams of up to 39 federal staff and contractors. Ms. Bothwell holds a Juris Doctor with a Civil Law Certificate from Loyola University-New Orleans.',
                     image: 'SRC/Headshots/Lisa_Bothwell_1.jpg'
+                },
+                {
+                    name: 'Saiena Shafiezadeh',
+                    title: 'Legal Director of Civil Rights',
+                    organization: 'NYC Office of Emergency Management',
+                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg',
+                    moderator: true
                 }
             ]
         }
@@ -361,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         speakerCard.innerHTML = `
                             <img src="${speaker.image}" alt="${speaker.name} headshot" class="${imageClass}">
-                            <h4>${speaker.name}</h4>
+                            <h4>${speaker.name}${speaker.moderator ? ' <span class="moderator-label">Moderator</span>' : ''}</h4>
                             <p class="speaker-title">${speaker.title}</p>
                             <p class="speaker-organization">${speaker.organization}</p>
                         `;
