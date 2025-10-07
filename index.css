@@ -163,7 +163,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('https://github.com/MAwadalla04/DLS_website/blob/main/SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg?raw=true');
+    background: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -180,16 +180,16 @@ body {
 
 /* Hero loaded state for smooth transition */
 .hero.hero-loaded {
-    background-image: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('https://github.com/MAwadalla04/DLS_website/blob/main/SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg?raw=true');
+    background-image: linear-gradient(rgba(0, 54, 94, 0.5), rgba(0, 54, 94, 0.5)), url('SRC/alexander-rotker--sQ4FsomXEs-unsplash.jpg');
     transition: background-image 0.3s ease-in-out;
 }
 
 .hero-content {
     width: 100%;
-    max-width: 1800px;
-    min-width: 1800px;
+    max-width: 1600px;
+    min-width: 1600px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 60px;
     position: relative;
     z-index: 3;
     text-align: center;
@@ -881,7 +881,7 @@ body {
     }
     
     .hero-content {
-        padding: 0 1.5rem 0 4%;
+        padding: 0 15px;
         margin-top: 0;
     }
     
@@ -955,7 +955,7 @@ body {
 
 @media (max-width: 900px) {
     .hero-content {
-        padding: 0 2rem 0 4rem;
+        padding: 0 60px;
         margin-top: -20px;
     }
     .about .container {
