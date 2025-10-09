@@ -103,7 +103,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     modalSpeakerPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}">`;
                 }
             } else {
-                modalSpeakerPhoto.innerHTML = '<i class="fas fa-user"></i>';
+                // No image - just show the name without any placeholder icon
+                modalSpeakerPhoto.innerHTML = '';
             }
             
             modal.style.display = 'block';

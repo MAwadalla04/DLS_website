@@ -201,12 +201,11 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Invisible Disabilities and Disaster Law Panel',
             speakers: [
                 {
-                    name: 'Dennis Boyd',
-                    title: 'Senior Disability and Civil Rights Counsel',
-                    organization: 'NYC Office of Emergency Management',
-                    bio: 'Dennis Boyd grew up in New York City and attended Dartmouth College and Boston University School of Law. He works in the Office of Chief Counsel of New York City\'s Department of Emergency Management (NYCEM), where he oversees the Disability and Access and Functional Needs program. This entails a focus on agency compliance with human rights laws for people who tend to be most adversely affected during large scale emergencies, including people with disabilities, the elderly, children, non-English speakers, the unhoused and others. He has thirty-eight years\' experience handling trials and appeals, conducting trainings, lobbying and advocating for low-income New Yorkers, with the last thirty of those years focused primarily on the rights of people with disabilities. Before joining the City, he was with a local disability Protection and Advocacy law firm, trying cases and developing policy around de-institutionalization, access to housing, health care and public accommodations and on the implementation of the federal ADA, the Help America Vote Act, and on NYC Building Code revisions. He has also worked with individuals seeking accommodations on college and graduate school admission tests and on professional licensing exams, as well as in the areas of housing discrimination, elder law, social security benefits and estate planning.',
-                    image: 'SRC/Headshots/Dennis_Boyd\'s_1.jpg',
-                    moderator: true
+                    name: 'Lisa Bothwell',
+                    title: 'Federal Policy Professional',
+                    organization: 'State Bar of Texas Licensed Attorney',
+                    bio: 'Lisa Bothwell is a Texas-licensed attorney who, as a federal policy and program analyst with more than a decade of experience, navigates the intersection of disability rights, emergency management, healthcare law, federal funding, and public program operations. Until recently, she served at the Administration for Community Living, where she engaged in legal research and writing and managed agency responses to federal policy as part of the Administrative Procedures Act process. Additionally, she was part of teams that drafted and managed public comments for both Section 1557 of the Affordable Care Act of 2010 and Section 504 of the Rehabilitation Act of 1973 rulemakings. Before ACL, Ms. Bothwell previously held key advisory roles in accessible emergency management at the Federal Emergency Management Agency (FEMA). While balancing federal legal and programmatic requirements as well as operational coordination, she deployed to over 15 major disasters—including Hurricanes Harvey, Irma, and Maria—leading teams of up to 39 federal staff and contractors. Ms. Bothwell holds a Juris Doctor with a Civil Law Certificate from Loyola University-New Orleans.',
+                    image: 'SRC/Headshots/Lisa_Bothwell_1.jpg'
                 },
                 {
                     name: 'Dennis Debbaudt',
@@ -237,19 +236,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'SRC/Headshots/Jo_Simon.jpg'
                 },
                 {
-                    name: 'Lisa Bothwell',
-                    title: 'Federal Policy Professional',
-                    organization: 'State Bar of Texas Licensed Attorney',
-                    bio: 'Lisa Bothwell is a Texas-licensed attorney who, as a federal policy and program analyst with more than a decade of experience, navigates the intersection of disability rights, emergency management, healthcare law, federal funding, and public program operations. Until recently, she served at the Administration for Community Living, where she engaged in legal research and writing and managed agency responses to federal policy as part of the Administrative Procedures Act process. Additionally, she was part of teams that drafted and managed public comments for both Section 1557 of the Affordable Care Act of 2010 and Section 504 of the Rehabilitation Act of 1973 rulemakings. Before ACL, Ms. Bothwell previously held key advisory roles in accessible emergency management at the Federal Emergency Management Agency (FEMA). While balancing federal legal and programmatic requirements as well as operational coordination, she deployed to over 15 major disasters—including Hurricanes Harvey, Irma, and Maria—leading teams of up to 39 federal staff and contractors. Ms. Bothwell holds a Juris Doctor with a Civil Law Certificate from Loyola University-New Orleans.',
-                    image: 'SRC/Headshots/Lisa_Bothwell_1.jpg'
+                    name: 'Dennis Boyd',
+                    title: 'Senior Disability and Civil Rights Counsel',
+                    organization: 'NYC Office of Emergency Management',
+                    bio: 'Dennis Boyd grew up in New York City and attended Dartmouth College and Boston University School of Law. He works in the Office of Chief Counsel of New York City\'s Department of Emergency Management (NYCEM), where he oversees the Disability and Access and Functional Needs program. This entails a focus on agency compliance with human rights laws for people who tend to be most adversely affected during large scale emergencies, including people with disabilities, the elderly, children, non-English speakers, the unhoused and others. He has thirty-eight years\' experience handling trials and appeals, conducting trainings, lobbying and advocating for low-income New Yorkers, with the last thirty of those years focused primarily on the rights of people with disabilities. Before joining the City, he was with a local disability Protection and Advocacy law firm, trying cases and developing policy around de-institutionalization, access to housing, health care and public accommodations and on the implementation of the federal ADA, the Help America Vote Act, and on NYC Building Code revisions. He has also worked with individuals seeking accommodations on college and graduate school admission tests and on professional licensing exams, as well as in the areas of housing discrimination, elder law, social security benefits and estate planning.',
+                    image: 'SRC/Headshots/Dennis_Boyd\'s_1.jpg'
                 },
                 {
                     name: 'Saiena Shafiezadeh',
                     title: 'Legal Director of Civil Rights',
                     organization: 'NYC Office of Emergency Management',
                     bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
-                    image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg',
-                    moderator: true
+                    image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg'
                 }
             ]
         }
@@ -448,7 +446,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     modalSpeakerPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}">`;
                 }
             } else {
-                modalSpeakerPhoto.innerHTML = '<i class="fas fa-user"></i>';
+                // No image - just show the name without any placeholder icon
+                modalSpeakerPhoto.innerHTML = '';
             }
             
             speakerModal.style.display = 'block';
