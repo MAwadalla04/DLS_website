@@ -99,18 +99,18 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'AI in Disaster Law Panel',
             speakers: [
                 {
-                    name: 'Aaron Friedman',
-                    title: 'Deputy Chief Privacy Officer',
-                    organization: 'NYC Office of Information Privacy',
-                    bio: 'Aaron Friedman, Deputy Chief Privacy Officer, has been part of the NYC Office of Information Privacy since 2019. He counsels agencies and the Chief Privacy Officer on privacy issues and teaches privacy law at Fordham Law School. Before joining the Office of Information Privacy, Aaron was a senior counsel with the NYC Department of Social Services. Aaron is a graduate of the Benjamin N. Cardozo School of Law and CUNY Queens College.',
-                    image: 'SRC/Headshots/Aaron_Friedman_1.jpg'
-                },
-                {
                     name: 'Ginger Armbruster',
                     title: 'Chief Privacy Officer',
                     organization: 'City of Seattle',
                     bio: 'As the City of Seattle\'s Chief Privacy Officer, Ginger Armbruster leads a team of privacy specialists in the execution of the City\'s Privacy Program, following a principles-based approach to the City\'s management of the public\'s personal and sensitive information. Prior to this role, she worked for Microsoft on an international team of privacy specialists to resolve issues associated with multi-million-dollar marketing initiatives. Before moving into privacy, she spent the first 20 years of her career working in sales and marketing for Fortune 500 companies such as IBM, Hewlett-Packard and Johnson & Johnson, as well as several medical technology startup companies.',
                     image: 'SRC/Headshots/Ginger_Armbruster_1.jpg'
+                },
+                {
+                    name: 'Sarah Carrier',
+                    title: 'Data Privacy & Responsible AI Program Manager',
+                    organization: 'City of Seattle',
+                    bio: 'Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
+                    image: 'SRC/Headshots/Sarah_Carrier_1.jpg'
                 },
                 {
                     name: 'Jiahao Chen',
@@ -120,11 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'SRC/Headshots/Jiahao_Chen.jpg'
                 },
                 {
-                    name: 'Sarah Carrier',
-                    title: 'Data Privacy & Responsible AI Program Manager',
-                    organization: 'City of Seattle',
-                    bio: 'Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
-                    image: 'SRC/Headshots/Sarah_Carrier_1.jpg'
+                    name: 'Aaron Friedman',
+                    title: 'Deputy Chief Privacy Officer',
+                    organization: 'NYC Office of Information Privacy',
+                    bio: 'Aaron Friedman, Deputy Chief Privacy Officer, has been part of the NYC Office of Information Privacy since 2019. He counsels agencies and the Chief Privacy Officer on privacy issues and teaches privacy law at Fordham Law School. Before joining the Office of Information Privacy, Aaron was a senior counsel with the NYC Department of Social Services. Aaron is a graduate of the Benjamin N. Cardozo School of Law and CUNY Queens College.',
+                    image: 'SRC/Headshots/Aaron_Friedman_1.jpg'
                 },
                 {
                     name: 'Robert Wilson',
@@ -140,18 +140,18 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Ethics in Disaster Law Panel',
             speakers: [
                 {
-                    name: 'Denisse Mira',
-                    title: 'Senior Counsel, Ethics & Compliance Division',
-                    organization: 'New York City Law Department',
-                    bio: 'Denisse Mira is a Senior Counsel in the Ethics and Compliance Division at the New York City Law Department. Prior to joining the Ethics and Compliance Division, Denisse was a Vice President of Global Financial Crimes Compliance for a financial institution.',
-                    image: 'SRC/Headshots/Denisse_Mira.jpg'
-                },
-                {
                     name: 'Joshua Goldfein',
                     title: 'Staff Attorney, Homeless Rights Project',
                     organization: 'The Legal Aid Society',
                     bio: 'Joshua Goldfein is a Staff Attorney in The Legal Aid Society\'s Homeless Rights Project, where he represents homeless single adults and families in individual and group actions.',
                     image: 'SRC/Headshots/Joshua_Goldfein.jpg'
+                },
+                {
+                    name: 'Denisse Mira',
+                    title: 'Senior Counsel, Ethics & Compliance Division',
+                    organization: 'New York City Law Department',
+                    bio: 'Denisse Mira is a Senior Counsel in the Ethics and Compliance Division at the New York City Law Department. Prior to joining the Ethics and Compliance Division, Denisse was a Vice President of Global Financial Crimes Compliance for a financial institution.',
+                    image: 'SRC/Headshots/Denisse_Mira.jpg'
                 },
                 {
                     name: 'Michael Ross',
@@ -174,18 +174,18 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'FOIL and Government Transparency Panel',
             speakers: [
                 {
-                    name: 'Elisa Lee',
-                    title: 'Senior Counsel',
-                    organization: 'NYC Law Department',
-                    bio: 'Elisa Lee is a Senior Counsel at the New York City Law Department in the Commercial and Real Estate Litigation Division. In her role, Elisa counsels and represents the City and its agencies in matters involving contract disputes with private companies that provide services for City projects. Representative matters involve contracts for the design, construction and construction management services rehabilitating private homes destroyed or damaged by Hurricane Sandy, design-build contracts for the four borough-based jails plan, the management of NYC hotel rooms to support operations during the COVID-19 pandemic, and upholding awards of contracts for health benefit services, for providing motor vehicle immobilization, towing, and related services, for recordkeeping services for the City\'s deferred compensation plan, and for administration of behavioral health services.',
-                    image: 'SRC/Headshots/Elisa Lee headshot.jpg'
-                },
-                {
                     name: 'Gwynne Hogan',
                     title: 'Senior Reporter',
                     organization: 'THE CITY',
                     bio: 'Gwynne Hogan is a senior reporter covering immigration, homelessness, and many things in between. Her coverage of the migrant crisis earned her the Newswomen\'s Club of New York\'s Journalist of the Year award in 2023. Her reporting on the COVID-19 pandemic forced the New York City officials to admit they were undercounting the dead, and earned her a 2021 Gracie award.',
                     image: 'SRC/Headshots/gwynne_headshot_1-scaled.webp'
+                },
+                {
+                    name: 'Elisa Lee',
+                    title: 'Senior Counsel',
+                    organization: 'NYC Law Department',
+                    bio: 'Elisa Lee is a Senior Counsel at the New York City Law Department in the Commercial and Real Estate Litigation Division. In her role, Elisa counsels and represents the City and its agencies in matters involving contract disputes with private companies that provide services for City projects. Representative matters involve contracts for the design, construction and construction management services rehabilitating private homes destroyed or damaged by Hurricane Sandy, design-build contracts for the four borough-based jails plan, the management of NYC hotel rooms to support operations during the COVID-19 pandemic, and upholding awards of contracts for health benefit services, for providing motor vehicle immobilization, towing, and related services, for recordkeeping services for the City\'s deferred compensation plan, and for administration of behavioral health services.',
+                    image: 'SRC/Headshots/Elisa Lee headshot.jpg'
                 },
                 {
                     name: 'Rob DeVoogd',
@@ -216,6 +216,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     image: 'SRC/Headshots/Dennis_Debbaudt_1.jpg'
                 },
                 {
+                    name: 'Kristine Hoffman',
+                    title: 'Deputy Counsel',
+                    organization: 'NYS Division of Homeland Security and Emergency Services',
+                    bio: 'Kristine Hoffman is a Deputy Counsel for the NYS Division of Homeland Security and Emergency Services with 23 years of experience as an emergency management attorney. She has extensive expertise in law and policy across preparedness, response, recovery, and hazard mitigation portfolios. During her career as state legal counsel, she has advised and provided guidance to the Executive Chamber, state agencies, municipalities, and emergency management partners. During her tenure at DHSES she has authored portions of Executive Law Article 2-B, including the Intrastate Mutual Aid Program legislation, has trained county executives statewide, and co-authored more 200 State Disaster Emergency Executive Orders during major disasters. She has assisted in securing more than 30 Presidential major disaster declarations, developed FEMA policy interpretations benefiting New York, and assisted in the advancement of multimillion-dollar resilience projects. Prior to joining DHSES, Ms. Hoffman worked as attorney for the NYS Department of Health\'s Office of Health Emergency Preparedness, where she helped craft isolation and quarantine protocols and first-in-the-nation Alternate Care Site guidelines. She is a graduate of Siena College and Albany Law School.',
+                    image: 'SRC/Headshots/Kristine_Hoffman.jpg'
+                },
+                {
                     name: 'Howard Rosenblum',
                     title: 'Founder and CEO, Deaf Equality',
                     organization: 'Deaf Equality',
@@ -228,13 +235,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     organization: '52nd District',
                     bio: 'New York Assemblymember Jo Anne Simon has been fighting for the inclusion of people with disabilities her entire career. Through her Brooklyn, NY based law firm she has represented people with disabilities across the country. A graduate of Fordham University School of Law, Ms. Simon is known for her expertise on the Americans with Disabilities Act (ADA), particularly as it relates to higher education, high stakes testing and professional licensing bodies. She acted as lead counsel for the successful plaintiff in the seminal case of Bartlett v. New York State Board of Law Examiners. Ms. Simon was also an adjunct Associate Professor at Fordham Law School for nearly 20 years and served as staff attorney at Hofstra Law School\'s Disabilities Law Clinic from 1992-1996. Ms. Simon testified before the U.S. Senate in support of the ADA Amendments Act in 2008. She was instrumental in securing passage of California\'s AB-2122, advising the Assembly and testifying before the Senate in support of the bill to ban "flagging" the scores of test takers who received disability accommodations on the LSAT. Her work was also instrumental in the U.S. Department of Justice\'s decision to bring pattern and practice claims against the Law School Admission Council in DFEH, et al v. LSAC. Disability rights advocacy precedes her career in the law. Ms. Simon holds an MA in the Education of the Deaf from Gallaudet University and a BA Speech pathology from Iona College. She has worked as a teacher of deaf and deaf-blind students, as a postsecondary disability services provider and as a certified sign language interpreter for 20 years. She is a founding member of the Association on Higher Education And Disability (AHEAD). She regularly advises student with disabilities, their parents and school administrators and regularly associates with colleagues around the country in pursuing disability rights matters. Long active in civic affairs, in 2014 Ms. Simon was elected to the N.Y.S. Assembly for the 52nd District where she has led on issues such as the rights of women, children, and the elderly, the reduction of gun violence, environmental justice and resiliency and the rights of individuals with disabilities. She created and has organized Dyslexia Awareness Days at the New York State Capital for 10 years, passed a landscape shifting bill protecting rights of students with dyslexia and related learning disabilities and serves on the Steering Committee of the State Action Plan on Literacy. She has worked to increase the number of women in politics and government. She chairs the Assembly\'s Committee on Mental Health.',
                     image: 'SRC/Headshots/Jo_Simon.jpg'
-                },
-                {
-                    name: 'Kristine Hoffman',
-                    title: 'Deputy Counsel',
-                    organization: 'NYS Division of Homeland Security and Emergency Services',
-                    bio: 'Kristine Hoffman is a Deputy Counsel for the NYS Division of Homeland Security and Emergency Services with 23 years of experience as an emergency management attorney. She has extensive expertise in law and policy across preparedness, response, recovery, and hazard mitigation portfolios. During her career as state legal counsel, she has advised and provided guidance to the Executive Chamber, state agencies, municipalities, and emergency management partners. During her tenure at DHSES she has authored portions of Executive Law Article 2-B, including the Intrastate Mutual Aid Program legislation, has trained county executives statewide, and co-authored more 200 State Disaster Emergency Executive Orders during major disasters. She has assisted in securing more than 30 Presidential major disaster declarations, developed FEMA policy interpretations benefiting New York, and assisted in the advancement of multimillion-dollar resilience projects. Prior to joining DHSES, Ms. Hoffman worked as attorney for the NYS Department of Health\'s Office of Health Emergency Preparedness, where she helped craft isolation and quarantine protocols and first-in-the-nation Alternate Care Site guidelines. She is a graduate of Siena College and Albany Law School.',
-                    image: 'SRC/Headshots/Kristine_Hoffman.jpg'
                 },
                 {
                     name: 'Lisa Bothwell',
