@@ -208,6 +208,8 @@ body {
 .venue-info p {
     color: #666;
     margin-bottom: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .venue-info a {
@@ -469,15 +471,28 @@ body {
     .parking-table {
         font-size: 0.8rem;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     .parking-table table {
-        min-width: 600px;
+        min-width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .parking-table thead,
+    .parking-table tbody,
+    .parking-table tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
     }
     
     .parking-table th,
     .parking-table td {
-        padding: 0.75rem;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        word-wrap: break-word;
     }
 }
 
@@ -492,6 +507,25 @@ body {
 
     .venue-content {
         gap: 2rem;
+    }
+    
+    .parking-table {
+        margin: 1rem -15px;
+        padding: 0 15px;
+    }
+    
+    .parking-table table {
+        font-size: 0.7rem;
+    }
+    
+    .parking-table th,
+    .parking-table td {
+        padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+    
+    .parking-table th {
+        font-size: 0.65rem;
     }
 }
 
@@ -535,11 +569,15 @@ html {
     color: #666;
     font-weight: 600;
     margin-bottom: 0.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .hotel-contact {
     margin-bottom: 1.2rem;
     line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .hotel-contact strong {
