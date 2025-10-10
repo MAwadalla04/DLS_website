@@ -96,7 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Panel data
     const panelData = {
         'ai-panel': {
-            title: 'AI in Disaster Law Panel',
+            title: 'Emergence of Artificial Intelligence in Emergency Response Operations: Considerations in Efficiency, Privacy, and Security',
+            description: 'This CLE explores the emergence and integration of Artificial Intelligence into local government operations, including emergency operations, and discusses the ongoing need to balance government efficiency, privacy, and security.',
+            objectives: [
+                'Understand the current landscape as local governments begin to incorporate Artificial Intelligence into its operational framework, including emergency response operations.',
+                'Explore the ongoing need to balance government efficiency and productivity against growing concerns surrounding privacy and cyber security.',
+                'Discuss how different jurisdictions have begun to address these issues.'
+            ],
             speakers: [
                 {
                     name: 'Ginger Armbruster',
@@ -323,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `
         },
         'ai-course': {
-            title: 'AI in Disaster Law - Course Information',
+            title: 'Emergence of Artificial Intelligence in Emergency Response Operations: Considerations in Efficiency, Privacy, and Security - Course Information',
             content: `
                 <div class="cle-overview">
                     <h4>CLE Overview:</h4>
