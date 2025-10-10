@@ -23,15 +23,20 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
-    min-width: 1400px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1400px;
-    min-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
 }
 
 /* Header Styles */
