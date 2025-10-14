@@ -96,20 +96,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Panel data
     const panelData = {
         'ai-panel': {
-            title: 'AI in Disaster Law Panel',
+            title: 'Emergence of Artificial Intelligence in Emergency Response Operations: Considerations in Efficiency, Privacy, and Security',
+            description: 'This CLE explores the emergence and integration of Artificial Intelligence into local government operations, including emergency operations, and discusses the ongoing need to balance government efficiency, privacy, and security.',
+            objectives: [
+                'Understand the current landscape as local governments begin to incorporate Artificial Intelligence into its operational framework, including emergency response operations.',
+                'Explore the ongoing need to balance government efficiency and productivity against growing concerns surrounding privacy and cyber security.',
+                'Discuss how different jurisdictions have begun to address these issues.'
+            ],
             speakers: [
                 {
                     name: 'Ginger Armbruster',
                     title: 'Chief Privacy Officer',
                     organization: 'City of Seattle',
-                    bio: 'As the City of Seattle\'s Chief Privacy Officer, Ginger Armbruster leads a team of privacy specialists in the execution of the City\'s Privacy Program, following a principles-based approach to the City\'s management of the public\'s personal and sensitive information. Prior to this role, she worked for Microsoft on an international team of privacy specialists to resolve issues associated with multi-million-dollar marketing initiatives. Before moving into privacy, she spent the first 20 years of her career working in sales and marketing for Fortune 500 companies such as IBM, Hewlett-Packard and Johnson & Johnson, as well as several medical technology startup companies.',
+                    bio: 'Ginger Armbruster leads a team of privacy specialists in the execution of the City\'s Privacy Program, following a principles-based approach to the City\'s management of the public\'s personal and sensitive information. Prior to this role, she worked for Microsoft on an international team of privacy specialists to resolve issues associated with multi-million-dollar marketing initiatives. Before moving into privacy, she spent the first 20 years of her career working in sales and marketing for Fortune 500 companies such as IBM, Hewlett-Packard and Johnson & Johnson, as well as several medical technology startup companies.',
                     image: 'SRC/Headshots/Ginger_Armbruster_1.jpg'
                 },
                 {
                     name: 'Sarah Carrier',
                     title: 'Data Privacy & Responsible AI Program Manager',
                     organization: 'City of Seattle',
-                    bio: 'Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
+                    bio: 'Sarah Carrier has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks. Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.',
                     image: 'SRC/Headshots/Sarah_Carrier_1.jpg'
                 },
                 {
@@ -143,21 +149,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     name: 'Joshua Goldfein',
                     title: 'Staff Attorney, Homeless Rights Project',
                     organization: 'The Legal Aid Society',
-                    bio: 'Joshua Goldfein is a Staff Attorney in The Legal Aid Society\'s Homeless Rights Project, where he represents homeless single adults and families in individual and group actions.',
+                    bio: 'Joshua Goldfein is a Staff Attorney in The Legal Aid Society\'s Homeless Rights Project, where he represents homeless single adults and families in individual and group actions. He also provides representation to Coalition for the Homeless and Center for Independence of the Disabled, New York in impact litigation and government and policy advocacy. Mr. Goldfein started at the Legal Aid Society in 1993 in its Harlem Neighborhood Office, where he represented clients in landlord-tenant, public benefits and family law matters. He joined the Homeless Rights Project in 1998. At the Homeless Rights Project, Mr. Goldfein has been counsel of record in the New York "right to shelter" cases, including Callahan v. Carey, (right to shelter for homeless adults); Ebony Boston v. NYC, (right to shelter for homeless families with children); McCain v. Bloomberg, (same); and Cosentino v. Perales, (child welfare rights of homeless parents). Mr. Goldfein has also been represented clients in cases addressing other rights of homeless New Yorkers including Butler v. NYC, (disabled shelter applicants, SDNY); E.G. v. NYC, (WiFi for remote-schooling children in shelter, SDNY); Reynolds v. Giuliani, 35 F.Supp. 2d 331 (emergency public assistance grants, SDNY); Sapp v. NYC, 2013 N.Y. Misc. LEXIS 4365 (Superstorm Sandy evacuee hotel program); Emile v. NYC, (shelter for homeless former NYCHA residents, NY Supreme) and City of Newark v. NYC, 2021 U.S. Dist. LEXIS 171585 (housing subsidies). Other cases he has litigated include Freeman v. Scoppetta, 98 Civ. 5636 (DLC) (foster care benefits), Escalera v. NYCHA, 924 F. Supp. 1323 (1996) (due process rights); Lewis v. Grinker, 111 F.Supp. 2d 142 (prenatal care for immigrants); Alston v. Starrett City, 161 A.D.3d 37 (2018) (source of income discrimination); Zheng v. NYC, 19 N.Y.3d 556 (2012) (tenants in City\'s Advantage housing subsidy program); and Claudio v. Dowling, 89 N.Y. 2d 567 (1997) (foster care benefits) and numerous individual actions in administrative fora, Civil Court, and New York Supreme. Mr. Goldfein is a member of the Institutional Review Board of the Center for Court Innovation. He is a co-winner of the Thurgood Marshall Award of the Association of the Bar of the City of New York for his work on DeBruce v. Alabama, 758 F.3d 1263 (2014), and preceding litigation in federal and Alabama courts, which resulted in vacatur of Mr. DeBruce\'s death sentence. He is a 1993 graduate of NYU School of Law, where he was a member of the Family Defense Clinic. He also served on the board of directors of Research, Education and Advocacy to Combat Homelessness (REACH) and the staff of the Review of Law and Social Change.',
                     image: 'SRC/Headshots/Joshua_Goldfein.jpg'
                 },
                 {
                     name: 'Denisse Mira',
                     title: 'Senior Counsel, Ethics & Compliance Division',
                     organization: 'New York City Law Department',
-                    bio: 'Denisse Mira is a Senior Counsel in the Ethics and Compliance Division at the New York City Law Department. Prior to joining the Ethics and Compliance Division, Denisse was a Vice President of Global Financial Crimes Compliance for a financial institution.',
+                    bio: 'Denisse Mira is a Senior Counsel in the Ethics and Compliance Division at the New York City Law Department. Prior to joining the Ethics and Compliance Division, Denisse was a Vice President of Global Financial Crimes Compliance for a financial institution. Additionally, she serves as an Adjunct Professor for New York School of Career & Applied Studies - Touro College ("NYSCAS"). She graduated Touro College Jacob D. Fuchsberg Law Center in 2017.',
                     image: 'SRC/Headshots/Denisse_Mira.jpg'
                 },
                 {
                     name: 'Michael Ross',
                     title: 'Principal, Law Offices of Michael S. Ross',
                     organization: 'Adjunct Professor, Cardozo & Brooklyn Law Schools',
-                    bio: 'Michael S. Ross is the principal of the Law Offices of Michael S. Ross, where he concentrates his practice in attorney ethics and professional responsibility matters.',
+                    bio: 'Michael S. Ross is the principal of the Law Offices of Michael S. Ross, where he concentrates his practice in attorney ethics and professional responsibility matters. He is a former Assistant United States Attorney in the Criminal Division of the Southern District of New York and also served as an Assistant District Attorney in Kings County. Mr. Ross has been an Adjunct Professor at the Benjamin N. Cardozo School of Law for forty-five years, and has taught a variety of courses in Criminal and Civil Litigation; Appellate Advocacy; Judicial Administration; and Professional Responsibility. Mr. Ross currently teaches Litigation Ethics at Cardozo Law School during both the Fall and Spring semesters and simultaneously, for the last twenty years, he has taught Professional Responsibility at Brooklyn Law School during the Fall and Spring (and during most of those years taught the summer semester as well). He co-founded in 1983 Cardozo Law School\'s Intensive Trial Advocacy Program and for four decades served in roles as the Executive Director, Team Leader or Instructor/Lecturer of the Program. Mr. Ross has lectured widely on ethics-related topics to organizations such as the American Bar Association ("A.B.A."), the Practicing Law Institute, the Appellate Divisions of the First, Second and Third Judicial Departments, the Association of the Bar of the City of New York, the New York State Judicial Institute, the National Institute of Trial Advocacy, the New York State Bar Association, the New York County Lawyers\' Association, the New York State Academy of Trial Lawyers and the New York State Trial Lawyers Association. Mr. Ross has served as a member of the New York State Bar Association\'s Committee on Professional Discipline; the New York State Bar Association\'s Task Force On Lawyer Advertising; the New York County Lawyers\' Association\'s Committee on Professional Discipline; the New York State Bar Association\'s Special Committee on the Unlawful Practice of Law; the New York State Bar Association\'s Special Committee on Procedures for Judicial Discipline; and the New York State Bar Association\'s Committee on Mass Disasters. He previously served for a number of terms on the Association of the Bar of the City of New York\'s Committee on Professional Discipline. Mr. Ross completed a five-year tenure as an appointed member of the New York State Continuing Legal Education Board, which, among other things, formulates CLE guidelines in the State. Mr. Ross has chaired the A.B.A.\'s Grand Jury Committee and the City Bar Association\'s Committee on Criminal Advocacy. He previously served as the A.B.A. Criminal Justice Section\'s liaison to the A.B.A. Standing Committee on Ethics and Professional Responsibility and was an appointed member of the A.B.A.\'s Special "Criminal Justice In Crisis Committee." Among his writings, Mr. Ross has co-authored a chapter on "Client and Witness Perjury," for the A.B.A.\'s Section of Litigation ethics training course book entitled Litigation Ethics: Course Materials For Continuing Legal Education.',
                     image: 'SRC/Headshots/Michael_Ross_1.jpg'
                 },
                 {
@@ -192,7 +198,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Senior Agency Counsel and FOIL Officer',
                     organization: 'NYC Emergency Management',
                     bio: 'Rob DeVoogd is Senior Agency Counsel and FOIL officer at New York City Emergency Management. He has been with the agency for 8 years.',
-                    image: 'SRC/Headshots/Rob_DeVoogd_1.jpg'
+                    image: 'SRC/Headshots/Rob_DeVoogd_1.jpg',
+                    moderator: true
                 }
             ]
         },
@@ -229,9 +236,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     name: 'Jo Anne Simon',
-                    title: 'New York State Assemblymember',
+                    title: 'New York State Assembly Member',
                     organization: '52nd District',
-                    bio: 'New York Assemblymember Jo Anne Simon has been fighting for the inclusion of people with disabilities her entire career. Through her Brooklyn, NY based law firm she has represented people with disabilities across the country. A graduate of Fordham University School of Law, Ms. Simon is known for her expertise on the Americans with Disabilities Act (ADA), particularly as it relates to higher education, high stakes testing and professional licensing bodies. She acted as lead counsel for the successful plaintiff in the seminal case of Bartlett v. New York State Board of Law Examiners. Ms. Simon was also an adjunct Associate Professor at Fordham Law School for nearly 20 years and served as staff attorney at Hofstra Law School\'s Disabilities Law Clinic from 1992-1996. Ms. Simon testified before the U.S. Senate in support of the ADA Amendments Act in 2008. She was instrumental in securing passage of California\'s AB-2122, advising the Assembly and testifying before the Senate in support of the bill to ban "flagging" the scores of test takers who received disability accommodations on the LSAT. Her work was also instrumental in the U.S. Department of Justice\'s decision to bring pattern and practice claims against the Law School Admission Council in DFEH, et al v. LSAC.\n\nDisability rights advocacy precedes her career in the law. Ms. Simon holds an MA in the Education of the Deaf from Gallaudet University and a BA Speech pathology from Iona College. She has worked as a teacher of deaf and deaf-blind students, as a postsecondary disability services provider and as a certified sign language interpreter for 20 years. She is a founding member of the Association on Higher Education And Disability (AHEAD). She regularly advises student with disabilities, their parents and school administrators and regularly associates with colleagues around the country in pursuing disability rights matters.\n\nLong active in civic affairs, in 2014 Ms. Simon was elected to the N.Y.S. Assembly for the 52nd District where she has led on issues such as the rights of women, children, and the elderly, the reduction of gun violence, environmental justice and resiliency and the rights of individuals with disabilities. She created and has organized Dyslexia Awareness Days at the New York State Capital for 10 years, passed a landscape shifting bill protecting rights of students with dyslexia and related learning disabilities and serves on the Steering Committee of the State Action Plan on Literacy. She has worked to increase the number of women in politics and government. She chairs the Assembly\'s Committee on Mental Health.',
+                    bio: 'New York Assemblymember Jo Anne Simon has been fighting for the inclusion of people with disabilities her entire career. Through her Brooklyn, NY based law firm she has represented people with disabilities across the country. A graduate of Fordham University School of Law, Ms. Simon is known for her expertise on the Americans with Disabilities Act (ADA), particularly as it relates to higher education, high stakes testing and professional licensing bodies. She acted as lead counsel for the successful plaintiff in the seminal case of Bartlett v. New York State Board of Law Examiners. Ms. Simon was also an adjunct Associate Professor at Fordham Law School for nearly 20 years and served as staff attorney at Hofstra Law School\'s Disabilities Law Clinic from 1992-1996. Ms. Simon testified before the U.S. Senate in support of the ADA Amendments Act in 2008. She was instrumental in securing passage of California\'s AB-2122, advising the Assembly and testifying before the Senate in support of the bill to ban "flagging" the scores of test takers who received disability accommodations on the LSAT. Her work was also instrumental in the U.S. Department of Justice\'s decision to bring pattern and practice claims against the Law School Admission Council in DFEH, et al v. LSAC. Disability rights advocacy precedes her career in the law. Ms. Simon holds an MA in the Education of the Deaf from Gallaudet University and a BA Speech pathology from Iona College. She has worked as a teacher of deaf and deaf-blind students, as a postsecondary disability services provider and as a certified sign language interpreter for 20 years. She is a founding member of the Association on Higher Education And Disability (AHEAD). She regularly advises student with disabilities, their parents and school administrators and regularly associates with colleagues around the country in pursuing disability rights matters. Long active in civic affairs, in 2014 Ms. Simon was elected to the N.Y.S. Assembly for the 52nd District where she has led on issues such as the rights of women, children, and the elderly, the reduction of gun violence, environmental justice and resiliency and the rights of individuals with disabilities. She created and has organized Dyslexia Awareness Days at the New York State Capital for 10 years, passed a landscape shifting bill protecting rights of students with dyslexia and related learning disabilities and serves on the Steering Committee of the State Action Plan on Literacy. She has worked to increase the number of women in politics and government. She chairs the Assembly\'s Committee on Mental Health.',
                     image: 'SRC/Headshots/Jo_Simon.jpg'
                 },
                 {
@@ -246,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     name: 'Saiena Shafiezadeh',
                     title: 'Legal Director of Civil Rights',
                     organization: 'NYC Office of Emergency Management',
-                    bio: 'Saiena Shafiezadeh is the Legal Director of Civil Rights at NYC Emergency Management, where she provides legal support to the Office of Chief Counsel and contributes to the City\'s emergency preparedness, response, and recovery efforts, particularly as they relate to individuals with disabilities, access, and functional needs. She also serves as co-chair of the agency\'s Equity and Diversity Council.\n\nPrior to her current position, Saiena practiced as a housing attorney, representing tenants facing eviction in Manhattan Housing Court. She also worked at the NYC Commission on Human Rights, where she investigated and adjudicated discrimination claims under the NYC Human Rights Law.\n\nSaiena is also a past President of the Iranian American Bar Association\'s National Board of Directors, a national legal organization dedicated to informing and educating the Iranian American community about legal issues of interest. Saiena earned her J.D. from the University of Illinois Chicago School of Law and her B.A. from Loyola University Chicago.',
+                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
                     image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg',
                     moderator: true
                 }
@@ -323,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `
         },
         'ai-course': {
-            title: 'AI in Disaster Law - Course Information',
+            title: 'Emergence of Artificial Intelligence in Emergency Response Operations: Considerations in Efficiency, Privacy, and Security - Course Information',
             content: `
                 <div class="cle-overview">
                     <h4>CLE Overview:</h4>
@@ -416,7 +423,39 @@ document.addEventListener('DOMContentLoaded', function() {
         speakerBioName.textContent = speaker.name;
         speakerBioTitle.textContent = speaker.title;
         speakerBioOrganization.textContent = speaker.organization;
-        speakerBioText.textContent = speaker.bio;
+        // Render bio with proper paragraph spacing
+        if (typeof speaker.bio === 'string' && speaker.bio.indexOf('<p') === -1) {
+            // Check if bio is short (less than 200 characters) - keep as single paragraph
+            if (speaker.bio.length < 200) {
+                speakerBioText.innerHTML = `<p>${speaker.bio}</p>`;
+            } else if (speaker.bio.length < 500) {
+                // Medium length bios - 2 paragraphs
+                const sentences = speaker.bio
+                    .split(/(?<=[.!?])\s+/)
+                    .map(s => s.trim())
+                    .filter(Boolean);
+                const paragraphs = [];
+                const groupSize = Math.max(1, Math.ceil(sentences.length / 2)); // max 2 paragraphs
+                for (let i = 0; i < sentences.length; i += groupSize) {
+                    paragraphs.push(`<p>${sentences.slice(i, i + groupSize).join(' ')}</p>`);
+                }
+                speakerBioText.innerHTML = paragraphs.join('');
+            } else {
+                // Very long bios - 3 paragraphs
+                const sentences = speaker.bio
+                    .split(/(?<=[.!?])\s+/)
+                    .map(s => s.trim())
+                    .filter(Boolean);
+                const paragraphs = [];
+                const groupSize = Math.max(1, Math.ceil(sentences.length / 3)); // max 3 paragraphs
+                for (let i = 0; i < sentences.length; i += groupSize) {
+                    paragraphs.push(`<p>${sentences.slice(i, i + groupSize).join(' ')}</p>`);
+                }
+                speakerBioText.innerHTML = paragraphs.join('');
+            }
+        } else {
+            speakerBioText.innerHTML = speaker.bio;
+        }
         speakerBioModal.style.display = 'block';
     }
     
@@ -428,7 +467,40 @@ document.addEventListener('DOMContentLoaded', function() {
             modalSpeakerName.textContent = speaker.name;
             modalSpeakerTitle.textContent = speaker.title;
             modalSpeakerOrganization.textContent = speaker.organization;
-            modalSpeakerBio.innerHTML = speaker.bio;
+            // Ensure bios have paragraph spacing. If no <p> tags, split
+            // the bio into sentences and group them into short paragraphs.
+            if (typeof speaker.bio === 'string' && speaker.bio.indexOf('<p') === -1) {
+                // Check if bio is short (less than 200 characters) - keep as single paragraph
+                if (speaker.bio.length < 200) {
+                    modalSpeakerBio.innerHTML = `<p>${speaker.bio}</p>`;
+                } else if (speaker.bio.length < 500) {
+                    // Medium length bios - 2 paragraphs
+                    const sentences = speaker.bio
+                        .split(/(?<=[.!?])\s+/)
+                        .map(s => s.trim())
+                        .filter(Boolean);
+                    const paragraphs = [];
+                    const groupSize = Math.max(1, Math.ceil(sentences.length / 2)); // max 2 paragraphs
+                    for (let i = 0; i < sentences.length; i += groupSize) {
+                        paragraphs.push(`<p>${sentences.slice(i, i + groupSize).join(' ')}</p>`);
+                    }
+                    modalSpeakerBio.innerHTML = paragraphs.join('');
+                } else {
+                    // Very long bios - 3 paragraphs
+                    const sentences = speaker.bio
+                        .split(/(?<=[.!?])\s+/)
+                        .map(s => s.trim())
+                        .filter(Boolean);
+                    const paragraphs = [];
+                    const groupSize = Math.max(1, Math.ceil(sentences.length / 3)); // max 3 paragraphs
+                    for (let i = 0; i < sentences.length; i += groupSize) {
+                        paragraphs.push(`<p>${sentences.slice(i, i + groupSize).join(' ')}</p>`);
+                    }
+                    modalSpeakerBio.innerHTML = paragraphs.join('');
+                }
+            } else {
+                modalSpeakerBio.innerHTML = speaker.bio;
+            }
             
             // Set photo
             if (speaker.image) {
