@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     title: 'Senior Counsel',
                     organization: 'NYC Law Department',
                     bio: 'Elisa Lee is a Senior Counsel at the New York City Law Department in the Commercial and Real Estate Litigation Division. In her role, Elisa counsels and represents the City and its agencies in matters involving contract disputes with private companies that provide services for City projects. Representative matters involve contracts for the design, construction and construction management services rehabilitating private homes destroyed or damaged by Hurricane Sandy, design-build contracts for the four borough-based jails plan, the management of NYC hotel rooms to support operations during the COVID-19 pandemic, and upholding awards of contracts for health benefit services, for providing motor vehicle immobilization, towing, and related services, for recordkeeping services for the City\'s deferred compensation plan, and for administration of behavioral health services.',
-                    image: 'SRC/Headshots/Elisa Lee headshot.jpg'
+                    image: 'SRC/Headshots/Elisa_Lee_hs.jpeg'
                 },
                 {
                     name: 'Rob DeVoogd',
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     name: 'Saiena Shafiezadeh',
                     title: 'Legal Director of Civil Rights',
                     organization: 'NYC Office of Emergency Management',
-                    bio: 'Expert in addressing the needs of individuals with invisible disabilities in emergency planning and disaster response.',
+                    bio: 'Saiena Shafiezadeh is the Legal Director of Civil Rights at NYC Emergency Management, where she provides legal support to the Office of Chief Counsel and contributes to the City\'s emergency preparedness, response, and recovery efforts, particularly as they relate to individuals with disabilities, access, and functional needs. She also serves as co-chair of the agency\'s Equity and Diversity Council. Prior to her current position, Saiena practiced as a housing attorney, representing tenants facing eviction in Manhattan Housing Court.\n\nShe also worked at the NYC Commission on Human Rights, where she investigated and adjudicated discrimination claims under the NYC Human Rights Law. Saiena is also a past President of the Iranian American Bar Association\'s National Board of Directors, a national legal organization dedicated to informing and educating the Iranian American community about legal issues of interest. Saiena earned her J.D. from the University of Illinois Chicago School of Law and her B.A. from Loyola University Chicago.',
                     image: 'SRC/Headshots/Saiena_Shafiezadeh_1.jpg',
                     moderator: true
                 }
@@ -367,11 +367,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         const speakerCard = document.createElement('div');
                         speakerCard.className = 'panel-speaker-card';
                         
-                        // Add specific class for Robert DeVoogd's image
-                        const imageClass = speaker.name === 'Rob DeVoogd' ? 'robert-devoogd-img' : '';
+                        // Add specific class for speaker images that need positioning adjustment
+                        let imageClass = '';
+                        if (speaker.name === 'Rob DeVoogd') {
+                            imageClass = 'robert-devoogd-img';
+                        } else if (speaker.name === 'Elisa Lee') {
+                            imageClass = 'elisa-lee-img';
+                        }
                         
                         speakerCard.innerHTML = `
-                            <img src="${speaker.image}" alt="${speaker.name} headshot" class="${imageClass}">
+                            <img src="${speaker.image}" alt="${speaker.name} headshot" class="${imageClass}" loading="lazy" decoding="async">
                             <h4>${speaker.name}${speaker.moderator ? ' <span class="moderator-label">Moderator</span>' : ''}</h4>
                             <p class="speaker-title">${speaker.title}</p>
                             <p class="speaker-organization">${speaker.organization}</p>
@@ -413,9 +418,11 @@ document.addEventListener('DOMContentLoaded', function() {
         speakerBioImage.src = speaker.image;
         speakerBioImage.alt = speaker.name + ' headshot';
         
-        // Add specific class for Robert DeVoogd's image
+        // Add specific class for speaker images that need positioning adjustment
         if (speaker.name === 'Rob DeVoogd') {
             speakerBioImage.className = 'robert-devoogd-bio-img';
+        } else if (speaker.name === 'Elisa Lee') {
+            speakerBioImage.className = 'elisa-lee-bio-img';
         } else {
             speakerBioImage.className = '';
         }
