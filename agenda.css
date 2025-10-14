@@ -372,6 +372,8 @@ body {
     max-width: 800px;
     max-height: 80vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -450,10 +452,21 @@ body {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    position: absolute;
+    position: sticky;
+    position: -webkit-sticky;
     top: 15px;
     right: 20px;
-    z-index: 1001;
+    z-index: 3000;
+    background: rgba(255, 255, 255, 0.95);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: -40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .close:hover,
@@ -677,6 +690,30 @@ body {
     .schedule-item {
         padding: 1.5rem;
     }
+    
+    /* Improved modal behavior on mobile */
+    .modal {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .modal-content {
+        margin: 10px;
+        max-height: calc(100vh - 20px);
+        width: calc(100% - 20px);
+        touch-action: pan-y;
+    }
+    
+    .close {
+        position: sticky;
+        top: 10px;
+        right: 10px;
+        font-size: 32px;
+        width: 44px;
+        height: 44px;
+        background: white;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    }
 }
 
 /* Panel Modal */
@@ -703,6 +740,8 @@ body {
     position: relative;
     animation: slideIn 0.3s ease;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 .panel-modal-content h3 {
@@ -864,9 +903,21 @@ body {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    position: absolute;
+    position: sticky;
+    position: -webkit-sticky;
     top: 15px;
     right: 20px;
+    z-index: 3000;
+    background: rgba(255, 255, 255, 0.95);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: -40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .close:hover,
@@ -879,11 +930,18 @@ body {
 
 /* Responsive Panel Modal */
 @media (max-width: 768px) {
+    .modal {
+        -webkit-overflow-scrolling: touch;
+    }
+    
     .modal-content {
         max-width: 95%;
-        max-height: 80vh;
+        max-height: 85vh;
         padding: 1.5rem;
-        margin: 2% auto;
+        margin: 5px auto;
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
     }
     
     .panel-speakers-grid {
@@ -918,6 +976,13 @@ body {
     .speaker-bio-details h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
+    }
+    
+    .close {
+        font-size: 30px;
+        width: 42px;
+        height: 42px;
+        top: 10px;
     }
 }
 

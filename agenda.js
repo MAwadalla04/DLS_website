@@ -391,6 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                     
                     panelModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
                 }
             });
         });
@@ -408,6 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     courseModalTitle.textContent = course.title;
                     courseModalContent.innerHTML = course.content;
                     courseModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
                 }
             });
         });
@@ -464,6 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerBioText.innerHTML = speaker.bio;
         }
         speakerBioModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
     
     // Function to open speaker modal (from index page)
@@ -531,6 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             speakerModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
         }
     }
     
@@ -551,6 +555,7 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerBioModal.style.display = 'none';
             speakerModal.style.display = 'none';
             courseModal.style.display = 'none';
+            document.body.style.overflow = '';
         });
     });
     
@@ -559,15 +564,19 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('click', function(event) {
             if (event.target === panelModal) {
                 panelModal.style.display = 'none';
+                document.body.style.overflow = '';
             }
             if (event.target === speakerBioModal) {
                 speakerBioModal.style.display = 'none';
+                document.body.style.overflow = '';
             }
             if (event.target === speakerModal) {
                 speakerModal.style.display = 'none';
+                document.body.style.overflow = '';
             }
             if (event.target === courseModal) {
                 courseModal.style.display = 'none';
+                document.body.style.overflow = '';
             }
         });
     }

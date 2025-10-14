@@ -22,19 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // Optimize speaker image loading
-    const speakerImages = document.querySelectorAll('.speaker-img');
-    speakerImages.forEach(img => {
-        img.addEventListener('load', function() {
-            this.classList.add('loaded');
-        });
-        // If image is already cached, show it immediately
-        if (img.complete) {
-            img.classList.add('loaded');
-        }
-    });
-
-
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');

@@ -1252,11 +1252,6 @@ html {
     border: 6px solid #005A9C;
     object-fit: cover;
     object-position: center top;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.speaker-img.loaded {
     opacity: 1;
 }
 
