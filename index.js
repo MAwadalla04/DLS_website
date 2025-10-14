@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Sonja Orgias, Esq.", 
             title: "Chief Counsel",
             organization: "New York City Emergency Management",
-            bio: "<p>Sonja Orgias has served as the Chief Counsel of New York City Emergency Management since August 2022. Ms. Orgias joined the agency in 2015 as Director of Legal Affairs and was appointed to Deputy Chief Counsel in 2021 to oversee the expansion of the agency's legal operations.</p><p>In her role, Ms. Orgias oversees the Office of the Chief Counsel comprised of three units: Legal Affairs, DAFN Legal, and Records Management. She also provides legal guidance to the Commissioner, First Deputy Commissioner, and other executives.</p><p>As a native Brooklynite who is also a City employee, Ms. Orgias is attuned to the unique way that this city runs; the way that its agencies run; and, the expectations of the public.</p><p>She has overseen emergency legal operations in response to numerous incidents in and outside of NYC, including drafting executive orders for extreme weather events, multiple city-to-city agreements with NYC and other municipalities, drafting emergency contracts valued at more than $600 million for the procurement of goods and services during the COVID-19 response, and licenses needed for City operations during other emergency crises.</p><p>In addition, Ms. Orgias was instrumental in starting, and serving in a leadership role of, the inaugural Equity and Diversity Council at New York Emergency Management. Her work has facilitated discussions and raised issues related to diversity, equity, and inclusion, which are necessary components in addressing community needs during emergencies.</p><p>Prior to joining New York City Emergency Management, Ms. Orgias served as an Administrative Law Judge with the New York City Environmental Control Board – OATH and Assistant Counsel with FDNY. She has a background in bankruptcy, immigration, administrative law, and alternative dispute resolution.</p><p>Ms. Orgias received her Juris Doctor Degree from Hofstra University School of Law and her Bachelor's Degree from Boston University and is a proud Stuyvesant High School alumna. She is a member of the New York State Bar Association Committee on Mass Disaster Response and the Judicial Screening Committee for the Kings County Democratic Party. Ms. Orgias is admitted to practice in the State of New York, the Eastern and Southern Districts of New York, and the Supreme Court of the United States.</p>",
+            bio: "<p>Sonja Orgias has served as the Chief Counsel of New York City Emergency Management since August 2022. Ms. Orgias joined the agency in 2015 as Director of Legal Affairs and was appointed to Deputy Chief Counsel in 2021 to oversee the expansion of the agency's legal operations.</p><p>In her role, Ms. Orgias oversees the Office of the Chief Counsel comprised of three units: Legal Affairs, DAFN Legal, and Records Management. She also provides legal guidance to the Commissioner, First Deputy Commissioner, and other executives.</p><p>As a native Brooklynite who is also a City employee, Ms. Orgias is attuned to the unique way that this city runs; the way that its agencies run; and, the expectations of the public.</p><p>She has overseen emergency legal operations in response to numerous incidents in and outside of NYC, including drafting executive orders for extreme weather events, multiple city-to-city agreements with NYC and other municipalities, drafting emergency contracts valued at more than $600 million for the procurement of goods and services during the COVID-19 response, and licenses needed for City operations during other emergency crises.</p><p>In addition, Ms. Orgias was instrumental in starting, and serving in a leadership role of, the inaugural Equity and Diversity Council at New York Emergency Management. Her work has facilitated discussions and raised issues related to diversity, equity, and inclusion, which are necessary components in addressing community needs during emergencies.</p><p>Prior to joining New York City Emergency Management, Ms. Orgias served as an Administrative Law Judge with the New York City Environmental Control Board – OATH and Assistant Counsel with FDNY. She has a background in bankruptcy, immigration, administrative law, and alternative dispute resolution. Ms. Orgias received her Juris Doctor Degree from Hofstra University School of Law and her Bachelor's Degree from Boston University and is a proud Stuyvesant High School alumna. She is a member of the New York State Bar Association Committee on Mass Disaster Response. Ms. Orgias is admitted to practice in the State of New York, the Eastern and Southern Districts of New York, and the Supreme Court of the United States.</p>",
             image: "SRC/Headshots/Sonja_Orgias.jpg",
             usePhoto: true
         }
@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
         }
     }
     
@@ -122,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (closeBtn) {
         closeBtn.addEventListener('click', function() {
             modal.style.display = 'none';
+            document.body.style.overflow = '';
         });
     }
     
@@ -130,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('click', function(event) {
             if (event.target === modal) {
                 modal.style.display = 'none';
+                document.body.style.overflow = '';
             }
         });
     }
