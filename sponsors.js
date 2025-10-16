@@ -68,11 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click functionality and haptic feedback for sponsor cards
     const clickableSponsors = document.querySelectorAll('.clickable-sponsor');
     clickableSponsors.forEach(card => {
-        // Add haptic feedback on hover
+        // Add subtle haptic feedback on hover
         card.addEventListener('mouseenter', function() {
-            // Trigger haptic feedback if supported
             if (navigator.vibrate) {
-                navigator.vibrate(10); // Short vibration
+                navigator.vibrate(5); // Very subtle vibration
             }
         });
         
@@ -80,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function() {
             const url = this.getAttribute('data-url');
             if (url) {
-                // Trigger haptic feedback on click
+                // Subtle haptic feedback on click
                 if (navigator.vibrate) {
-                    navigator.vibrate([50, 30, 50]); // Pattern vibration for click
+                    navigator.vibrate(15); // Light vibration
                 }
                 
                 // Add visual feedback
