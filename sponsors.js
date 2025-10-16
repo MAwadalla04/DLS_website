@@ -64,4 +64,49 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0)';
         });
     });
+    
+    // Add click functionality and haptic feedback for sponsor cards
+    const clickableSponsors = document.querySelectorAll('.clickable-sponsor');
+    clickableSponsors.forEach(card => {
+        // Add haptic feedback on hover
+        card.addEventListener('mouseenter', function() {
+            // Trigger haptic feedback if supported
+            if (navigator.vibrate) {
+                navigator.vibrate(10); // Short vibration
+            }
+        });
+        
+        // Add click functionality
+        card.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                // Trigger haptic feedback on click
+                if (navigator.vibrate) {
+                    navigator.vibrate([50, 30, 50]); // Pattern vibration for click
+                }
+                
+                // Add visual feedback
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+                
+                // Open link in new tab
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }
+        });
+        
+        // Add keyboard accessibility
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+        
+        // Make cards focusable for keyboard navigation
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', `Visit ${card.querySelector('h4').textContent} website`);
+    });
 });
