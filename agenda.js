@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalSpeakerTitle = document.getElementById('modalSpeakerTitle');
     const modalSpeakerOrganization = document.getElementById('modalSpeakerOrganization');
     const modalSpeakerBio = document.getElementById('modalSpeakerBio');
-    const modalSpeakerPhoto = document.querySelector('.speaker-modal-photo');
+    const modalSpeakerPhoto = document.querySelector('#speakerModal .speaker-modal-photo');
     const speakerModalClose = document.querySelector('.speaker-modal-close');
     
     // Speaker data (from index page)
