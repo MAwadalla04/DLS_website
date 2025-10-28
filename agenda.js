@@ -98,11 +98,11 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             speakers: [
                 {
-                    name: 'Ginger Armbruster',
-                    title: 'Chief Privacy Officer',
+                    name: 'Sarah Carrier',
+                    title: 'City of Seattle Privacy Program Manager',
                     organization: 'City of Seattle',
-                    bio: '<p>Ginger Armbruster leads a team of privacy specialists in the execution of the City\'s Privacy Program, following a principles-based approach to the City\'s management of the public\'s personal and sensitive information. Prior to this role, she worked for Microsoft on an international team of privacy specialists to resolve issues associated with multi-million-dollar marketing initiatives. Before moving into privacy, she spent the first 20 years of her career working in sales and marketing for Fortune 500 companies such as IBM, Hewlett-Packard and Johnson & Johnson, as well as several medical technology startup companies.</p>',
-                    image: 'SRC/Headshots/Ginger_Armbruster_1.jpg'
+                    bio: '<p>Sarah has spent the last six years with the City of Seattle growing and maturing the City\'s Data Privacy & Surveillance Ordinance Compliance Programs. Now, as the City\'s Data Privacy & Responsible AI Program Manager, she helps ensure City departments incorporate best practices into daily operations and public service offerings, in alignment with regulatory and policy frameworks.</p><p>Sarah\'s interest in the intersection of data privacy, ethics, policy & emerging technology has driven the development of the City of Seattle\'s Responsible AI Program. The heart of the program focuses on transparent and responsible enablement of AI tools that will innovate and improve public services for Seattle residents.</p>',
+                    image: 'SRC/Headshots/Sarah_Carrier_1.jpg'
                 },
                 {
                     name: 'Jiahao Chen',
