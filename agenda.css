@@ -798,7 +798,7 @@ body {
 
 /* Specific positioning for Robert DeVoogd's image */
 .robert-devoogd-img {
-    object-position: center 20% !important;
+    object-position: center 35% !important;
 }
 
 /* Specific positioning for Elisa Lee's image */
@@ -863,6 +863,11 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+/* Specific positioning for Robert DeVoogd's image in bio modal */
+.speaker-modal-photo img.robert-devoogd-bio-img {
+    object-position: center 35% !important;
 }
 
 .speaker-modal-photo .speaker-initials {

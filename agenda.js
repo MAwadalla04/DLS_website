@@ -178,6 +178,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     organization: 'NYC Emergency Management',
                     bio: '<p>Rob DeVoogd is Senior Agency Counsel and FOIL officer at New York City Emergency Management. He has been with the agency for 8 years.</p>',
                     image: 'SRC/Headshots/Rob_DeVoogd_1.jpg',
+                },
+                {
+                    name: 'Sabrina T. Smith, Esq.',
+                    title: 'Vice President of Continuing Legal Education (CLE) and Professional Development',
+                    organization: 'Metropolitan Black Bar Association',
+                    bio: '',
+                    image: 'SRC/Headshots/Sabrina_Smith_HS.png',
+                    moderator: true
                 }
             ]
         },
@@ -360,10 +368,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p class="speaker-organization">${speaker.organization}</p>
                         `;
                         
-                        // Add click event to show individual bio
-                        speakerCard.addEventListener('click', function() {
-                            showSpeakerBio(speaker);
-                        });
+                        // Add click event to show individual bio only if speaker has a bio
+                        if (speaker.bio && speaker.bio.trim() !== '') {
+                            speakerCard.style.cursor = 'pointer';
+                            speakerCard.addEventListener('click', function() {
+                                showSpeakerBio(speaker);
+                            });
+                        }
                         
                         panelModalSpeakers.appendChild(speakerCard);
                     });
@@ -397,7 +408,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSpeakerBio(speaker) {
         // Set photo
         if (speaker.image) {
-            speakerBioPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}">`;
+            // Add specific class for Rob DeVoogd's image positioning
+            const imageClass = speaker.name === 'Rob DeVoogd' ? 'robert-devoogd-bio-img' : '';
+            speakerBioPhoto.innerHTML = `<img src="${speaker.image}" alt="${speaker.name}" class="${imageClass}">`;
         } else {
             speakerBioPhoto.innerHTML = '';
         }
