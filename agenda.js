@@ -320,15 +320,13 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <div class="cle-overview">
                     <h4>CLE Overview:</h4>
-                    <p>This course examines the intersection of artificial intelligence and disaster law, including privacy considerations, automated decision-making in emergency situations, and AI applications in emergency management. Participants will explore legal frameworks for AI use in crisis response and the ethical implications of automated systems in disaster scenarios.</p>
+                    <p>This CLE explores the emergence and integration of Artificial Intelligence into local government operations, including emergency operations, and discusses the ongoing need to balance government efficiency, privacy, and security.</p>
                 </div>
-                <h4>Learning Objectives:</h4>
+                <h4>Course Objectives:</h4>
                 <ul>
-                    <li>Understand AI applications in emergency management</li>
-                    <li>Explore privacy and data protection issues</li>
-                    <li>Learn about automated decision-making in crisis situations</li>
-                    <li>Examine legal frameworks for AI in disaster response</li>
-                    <li>Address ethical considerations of AI in emergency contexts</li>
+                    <li>Understand the current landscape as local governments begin to incorporate Artificial Intelligence into its operational framework, including emergency response operations.</li>
+                    <li>Explore the ongoing need to balance government efficiency and productivity against growing concerns surrounding privacy and cyber security.</li>
+                    <li>Discuss how different jurisdictions have begun to address these issues.</li>
                 </ul>
                 <h4>Course Details:</h4>
                 <p><strong>Duration:</strong> 1.5 hours</p>
