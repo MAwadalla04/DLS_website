@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
                 <h4>Course Details:</h4>
                 <p><strong>Duration:</strong> 1.5 hours</p>
-                <p><strong>CLE Credits:</strong> 1.5 General credits (pending approval)</p>
+                <p><strong>CLE Credits:</strong> 1.5 Diversity, Inclusion, and Elimination of Bias credits (pending approval)</p>
                 <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
                 <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
             `
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
                 <h4>Course Details:</h4>
                 <p><strong>Duration:</strong> 1.5 hours</p>
-                <p><strong>CLE Credits:</strong> 1.5 Diversity, Inclusion, and Elimination of Bias credits (pending approval)</p>
+                <p><strong>CLE Credits:</strong> 1.5 General credits (pending approval)</p>
                 <p><strong>Format:</strong> Interactive panel discussion with Q&A</p>
                 <p><strong>Target Audience:</strong> Attorneys, legal professionals, and emergency management personnel</p>
             `
