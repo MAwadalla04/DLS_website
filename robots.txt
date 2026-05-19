@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Disallow: /agenda.html
+Disallow: /venue.html
+Disallow: /register.html
+Disallow: /sponsors.html
