@@ -1,7 +1,3 @@
 User-agent: *
 Allow: /
-Allow: /index.html
-Disallow: /agenda.html
-Disallow: /venue.html
-Disallow: /register.html
-Disallow: /sponsors.html
+Sitemap: https://disaster-law-symposium.nyc.gov/sitemap.xml
