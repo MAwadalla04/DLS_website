@@ -19,10 +19,10 @@ export function AgendaTimeline({ sessions, compact = false }: { sessions: Sessio
         const namedSpeakers = (session.speakerIds ?? []).map((id) => speakerById.get(id)).filter((speaker) => speaker?.published);
         return (
           <article className={`agenda-row agenda-${session.type}`} key={session.id}>
-            <div className="agenda-time"><span>{session.shortTime}</span><small>{session.time.replace(`${session.shortTime}–`, "")}</small></div>
-            <div className="agenda-marker" aria-hidden="true"><span /></div>
+            <div className="agenda-time"><span>{session.time}</span></div>
+            <div className="agenda-marker" aria-hidden="true">{session.type !== "break" ? <span /> : null}</div>
             <div className="agenda-content">
-              <div className="agenda-meta"><span className="session-type">{typeLabels[session.type]}</span>{session.cle ? <Badge variant="muted">CLE</Badge> : null}</div>
+              {session.type !== "break" ? <div className="agenda-meta"><span className="session-type">{typeLabels[session.type]}</span>{session.cle ? <Badge variant="muted">CLE</Badge> : null}</div> : null}
               <h3>{session.title}</h3>
               <p>{session.description}</p>
               {namedSpeakers.length > 0 ? <p className="agenda-speakers">With <strong>{namedSpeakers.map((speaker) => speaker?.name).join(", ")}</strong></p> : session.type === "course" || session.type === "remarks" ? <p className="agenda-speakers">Speaker lineup to be announced</p> : null}
