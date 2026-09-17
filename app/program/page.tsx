@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { AgendaTimeline } from "@/components/AgendaTimeline";
+import { HomeOnlyNotice } from "@/components/HomeOnlyNotice";
 import { SectionHeading } from "@/components/SectionHeading";
 import { courses, sessions } from "@/data/sessions";
+import { siteConfig } from "@/data/site";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = { title: "Program", description: "The complete Disaster Law Symposium 2026 agenda and CLE course details.", alternates: { canonical: "/program" } };
 
 export default function ProgramPage() {
+  if (siteConfig.landingOnly) return <HomeOnlyNotice />;
+
   return (
     <>
       <section className="page-hero"><div className="page-shell page-hero-inner"><p className="kicker">Disaster Law Symposium 2026</p><h1>A day built for<br /><em>the work ahead.</em></h1><p>Read the full sequence, from morning reception through the final conversation of the day.</p></div></section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HomeOnlyNotice } from "@/components/HomeOnlyNotice";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -32,6 +33,8 @@ function HeroActions({ light = false }: { light?: boolean }) {
 }
 
 export default function HeroDirectionsStagingPage() {
+  if (siteConfig.landingOnly) return <HomeOnlyNotice />;
+
   return (
     <div className="hero-staging-page">
       <section className="hero-staging-intro page-shell">

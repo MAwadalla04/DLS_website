@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HomeOnlyNotice } from "@/components/HomeOnlyNotice";
 import { RegistrationCTA } from "@/components/RegistrationCTA";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/data/site";
@@ -15,6 +16,8 @@ const faqs = [
 ];
 
 export default function RegisterPage() {
+  if (siteConfig.landingOnly) return <HomeOnlyNotice />;
+
   return (
     <>
       <section className="register-hero"><div className="page-shell register-hero-grid"><div><p className="kicker">Save your place</p><h1>Registration<br /><em>is coming.</em></h1><p>We are building a day worth stepping away from your desk for. Add your name when the doors open.</p><RegistrationCTA /></div><div className="register-facts"><div><span className="meta-label">Event</span><strong>Disaster Law Symposium 2026</strong></div><div><span className="meta-label">Date</span><strong>To be announced</strong></div><div><span className="meta-label">Venue</span><strong>New York City · TBA</strong></div></div></div></section>

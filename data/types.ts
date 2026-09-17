@@ -45,6 +45,7 @@ export type Sponsor = {
 };
 
 export type SiteConfig = {
+  landingOnly: boolean;
   name: string;
   title: string;
   thesis: string;

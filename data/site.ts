@@ -1,6 +1,7 @@
 import type { SiteConfig } from "./types";
 
 export const siteConfig: SiteConfig = {
+  landingOnly: true,
   name: "Disaster Law Symposium",
   title: "Disaster Law Symposium 2026",
   thesis: "Law at the Crossroads — Strengthening Systems for a New Era of Disasters",

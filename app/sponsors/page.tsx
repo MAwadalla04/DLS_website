@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { HomeOnlyNotice } from "@/components/HomeOnlyNotice";
 import { RegistrationCTA } from "@/components/RegistrationCTA";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/data/site";
@@ -10,6 +11,8 @@ export const metadata: Metadata = { title: "Sponsors", description: "Partner wit
 const tierLabels = { presenting: "Presenting partners", supporting: "Supporting partners", community: "Community partners" } as const;
 
 export default function SponsorsPage() {
+  if (siteConfig.landingOnly) return <HomeOnlyNotice />;
+
   return (
     <>
       <section className="page-hero page-hero-sponsors"><div className="page-shell page-hero-inner"><p className="kicker">Build the bridge with us</p><h1>Partnership is<br /><em>infrastructure.</em></h1><p>Support an independent space for the people responsible for making public systems more resilient.</p></div></section>

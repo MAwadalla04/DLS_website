@@ -4,12 +4,8 @@ Responsive Next.js App Router site for **Disaster Law Symposium 2026: Law at the
 
 ## Routes
 
-- `/` — symposium thesis, event status, program highlights, and registration CTA
-- `/program` — complete chronological agenda and CLE details
-- `/speakers` — confirmed speaker directory and accessible biography dialog
-- `/venue` — venue status, travel, accessibility, and accommodation information
-- `/sponsors` — partner tiers and partnership CTA
-- `/register` — registration status, FAQ, and external registration CTA
+- `/` — live symposium landing page with event status and program highlights
+- Other routes — temporarily redirect to `/` while the site is in landing-page mode
 
 ## Development
 
